@@ -3,7 +3,7 @@
 #include <string.h>
 #include "circulo.h"
 #include <math.h>
-#define M_PI=3.14159265358979323846;
+#define M_PI 3.14159265358979323846
 typedef struct{
     int id;
     float x, y, r;
