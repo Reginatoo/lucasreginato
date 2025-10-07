@@ -3,13 +3,14 @@
 #include <string.h>
 #include "circulo.h"
 #include <math.h>
+#define M_PI=3.14159265358979323846;
 typedef struct{
     int id;
     float x, y, r;
     char *corb, *corp;
 }circ;
 
-CIRCULO cria_circulo(int id, float x, float y, float r, char* cb, char* cd){
+CIRCULO cria_circulo(int id, float x, float y, float r, char* cb, char* cp){
 circ *c = malloc(sizeof(circ));
     if (c == NULL) {
         printf("Erro na alocação de memória na criação do circulo");
@@ -20,11 +21,11 @@ circ *c = malloc(sizeof(circ));
     c->x = x;
     c->y = y;
     c->r = r;
-    c->corb = strdup(corb);
+    c->corb = strdup(cb);
      if(c->corb == NULL) {
         printf("Erro na alocação de memória para a cor de borda");
         exit(1);}
-    c->corp = strdup(corp);
+    c->corp = strdup(cp);
         if(c->corp == NULL) {
         printf("Erro na alocação de memória para a cor de preenchimento");
         exit(1);}
@@ -67,14 +68,14 @@ void set_yC(CIRCULO c, float y){
 void set_cbC(CIRCULO c, char* cb){
     circ* c1 = (circ*)c;
     free(c1->corb);
-    c1->corb = strdup(corb);
+    c1->corb = strdup(cb);
      if(c1->corb == NULL) {
         printf("Erro na alocação de memória para a cor de borda");
         exit(1);}
     
 }
 
-void set_idC(CIRCULO c, int i){
+void set_idC(CIRCULO c, int id){
    ((circ*)c)->id = id;
 }
 

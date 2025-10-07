@@ -5,7 +5,7 @@
 typedef void* CIRCULO; 
 /** 
 * @brief criar uma estrutura de circulo com os seguintes parametros fornecidos
-*@param i ID do circulo
+*@param id ID do circulo
 *@param x coordenada x do circulo
 *@param y coordenada y do circulo
 *@param r raio do circulo
