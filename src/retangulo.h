@@ -11,10 +11,10 @@
      * @param w largura do retangulo
      * @param h altura do retangulo
      * @param cb cor da borda do retangulo
-     * @param cd cor de dentro do retangulo
+     * @param cp cor de dentro do retangulo
      */
 
-    RETANGULO cria_retangulo(int id, float x, float y, float w, float h, char cb, char cd);
+    RETANGULO cria_retangulo(int id, float x, float y, float w, float h, char* cb, char* cp);
     /**
  * @brief obtem o ID do retangulo
  * @param r o retangulo a ser consultado
@@ -62,7 +62,9 @@ char get_cbR(RETANGULO r);
  * @param r o retangulo a ser consultado
  * @return float o valor da cor de dentro do retangulo
  */
-char get_cdR(RETANGULO r);
+char get_cpR(RETANGULO r);
+
+float get_areaR(RETANGULO r);
 
 /**
  * @brief atualiza o id do retangulo.
