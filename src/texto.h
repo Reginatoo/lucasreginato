@@ -12,10 +12,14 @@ typedef void* TEXTO;
      * @param cp cor do preenchimento 
      * @param a Char para indicar onde fica a âncora do texto
      * @param ctd conteudo do texto
+     * @param familia A família da fonte (ex: "Arial", "sans-serif").
+     * @param peso O peso da fonte (ex: "normal", "bold").
+     * @param tam O tamanho da fonte (ex: "12px", "10").
+
      * @return Retorna um ponteiro do tipo void para essa estrutura
      */
 
-TEXTO cria_texto(int id, float x, float y, char* cp, char a, char* ctd);
+TEXTO cria_texto(int id, float x, float y, char* cp, char a, char* ctd,  char* familia, char* peso, char* tam);
 
  /**
  * @brief obtem o ID do texto
@@ -76,14 +80,14 @@ char* get_cbT(TEXTO t);
  * @param t O objeto de texto a ser consultado
  * @return O valor numérico da espessura da borda
  */
-float get_ebT(TEXTO t);
+char* get_ebT(TEXTO t);
 
 /**
  * @brief Obtém o tamanho da fonte do texto
  * @param t O objeto de texto a ser consultado
  * @return O valor numérico do tamanho da fonte
  */
-float get_tamT(TEXTO t);
+char* get_tamT(TEXTO t);
 
 /**
  * @brief Altera múltiplos atributos de estilo de um texto de uma só vez.
@@ -95,7 +99,7 @@ float get_tamT(TEXTO t);
  * @param tamanhoTexto O novo valor para o tamanho do texto. Um valor negativo indica que o atributo não deve ser alterado.
  */
 
-void set_estiloT(TEXTO t, char* cb, char* cp, float eb, float tam);
+void set_estiloT(TEXTO t, char* cb, char* cp, char* eb, char* tam);
 
 /**
  * @brief atualiza a coordenada x do texto
@@ -110,6 +114,10 @@ void set_xT(TEXTO t, float x);
  * @param y o novo valor para coordenada y
  */
 void set_yT(TEXTO t, float y);
+
+char* get_familiaT(TEXTO t);
+char* get_pesoT(TEXTO t);
+
 
 /**
  * @brief destroi a estrutura do texto e libera a memoria

@@ -5,12 +5,12 @@
 #include <math.h>
 typedef struct{
     int id;
-    float x, y, tam, eb;
-    char *corb, *corp, *ctd;
+    float x, y;
+    char *corb, *corp, *ctd, *familia, *peso, *tam, *eb;
     char a;
 }text;
 
-TEXTO cria_texto(int id, float x, float y, char* ctd, char a, char* cp){
+TEXTO cria_texto(int id, float x, float y, char* ctd, char a, char* cp, char* familia, char* peso, char* tam){
 text *t = malloc(sizeof(text));
     if (t == NULL) {
         printf("Erro na alocação de memória na criação do texto");
@@ -25,13 +25,25 @@ text *t = malloc(sizeof(text));
      if(t->ctd == NULL) {
         printf("Erro na alocação de memória para o conteudo do texto");
         exit(1);}
+     t->familia = strdup(familia);
+      if(t->familia == NULL) {
+        printf("Erro na alocação de memória para a familia do texto");
+        exit(1);}
+    t->peso = strdup(peso);
+     if(t->peso == NULL) {
+        printf("Erro na alocação de memória para o peso do texto");
+        exit(1);}
+    t->tam = strdup(tam);
+     if(t->tam == NULL) {
+        printf("Erro na alocação de memória para o tamanho do texto");
+        exit(1);}
     t->corp = strdup(cp);
         if(t->corp == NULL) {
         printf("Erro na alocação de memória para a cor de preenchimento");
         exit(1);}
+
         t->corb = strdup("black");
-        t->eb = 1.0;
-        t->tam = 10.0;
+        t->eb = strdup("1.0");
     return t;
     }
     int get_idT(TEXTO t){
@@ -63,12 +75,19 @@ char* get_cpT(TEXTO t){
 float get_areaT(TEXTO t){
     return strlen(((text*)t)->ctd) * 10.0;
 }
-float get_ebT(TEXTO t){
+char* get_ebT(TEXTO t){
     return ((text*)t)->eb;
 }
-float get_tamT(TEXTO t){
+char* get_familiaT(TEXTO t) {
+     return ((text*)t)->familia;
+     }
+char* get_pesoT(TEXTO t) { 
+    return ((text*)t)->peso;
+ }
+char* get_tamanhoT(TEXTO t) { 
     return ((text*)t)->tam;
 }
+
 void set_xT(TEXTO t, float x){
     ((text*)t)->x = x;
 }
@@ -99,7 +118,7 @@ void set_cpT(TEXTO t, char* corp){
         printf("Erro na alocação de memória para a cor de preenchimento");
         exit(1);}
      }
-void set_estiloT(TEXTO t, char* cb, char* cp, float eb, float tam){
+void set_estiloT(TEXTO t, char* cb, char* cp, char* eb, char* tam){
  text* t1= (text*)t;
 
     if (strcmp(cb, "-") != 0) {
@@ -111,22 +130,28 @@ void set_estiloT(TEXTO t, char* cb, char* cp, float eb, float tam){
         t1->corp = strdup(cp);
     }
 
-    if (eb >= 0) {
-        t1->eb = eb;
-    } 
-
-    if (tam >= 0) {
-        t1->tam = tam;
+   if (strcmp(eb, "-") != 0) {
+        free(t1->eb);
+        t1->eb = strdup(eb);
     }
-}
-void kill_texto(TEXTO t_void) {
-    text* t = (text*) t_void;
+
+   if (strcmp(tam, "-") != 0) {
+        free(t1->tam);
+        t1->tam = strdup(tam);
+    }}
+
+void kill_texto(TEXTO t) {
+    text* t1 = (text*)t;
     if (t == NULL) {
         return;
     }
-    free(t->corb);
-    free(t->corp);
-    free(t->ctd);
+    free(t1->corb);
+    free(t1->corp);
+    free(t1->ctd);
+    free(t1->eb);
+    free(t1->familia);
+    free(t1->peso);
+    free(t1->tam);
     free(t);
 }
 
