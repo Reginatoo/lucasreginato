@@ -1,10 +1,11 @@
 #ifndef circulo_h
 #define circulo_h
+#include <math.h>
 //definição do CIRCULO como ponteiro para o void
 typedef void* CIRCULO; 
 /** 
 * @brief criar uma estrutura de circulo com os seguintes parametros fornecidos
-*@param i ID do circulo
+*@param id ID do circulo
 *@param x coordenada x do circulo
 *@param y coordenada y do circulo
 *@param r raio do circulo
@@ -12,7 +13,7 @@ typedef void* CIRCULO;
 *@param cd cor de dentro do circulo
 *@return é retornado um ponteiro pelo CIRCULO para a estrutura de circulo criada
 */
-CIRCULO cria_circulo(int i, float x, float y, float r, char cb, char cd);
+CIRCULO cria_circulo(int id, float x, float y, float r, char cb, char cd, float area);
 
 /**
  * @brief obtem o ID do circulo
@@ -47,14 +48,22 @@ float get_RC(CIRCULO c);
  * @param c o circulo a ser consultado
  * @return float o valor da cor da borda do circulo
  */
-char get_cbC(CIRCULO c);
+char* get_cbC(CIRCULO c);
 
 /**
  * @brief obtem a cor de dentro do circulo
  * @param c o circulo a ser consultado
  * @return float o valor da cor de dentro do circulo
  */
-char get_cdC(CIRCULO c);
+char* get_cdC(CIRCULO c);
+
+ /**
+ * @brief Calcula a área do círculo
+ * @param c O círculo a ser consultado
+ * @return A área do círculo
+ */
+
+ float get_areaC(CIRCULO c);
 
 /**
  * @brief atualiza o id do círculo.
