@@ -13,7 +13,7 @@ typedef void* CIRCULO;
 *@param cd cor de dentro do circulo
 *@return é retornado um ponteiro pelo CIRCULO para a estrutura de circulo criada
 */
-CIRCULO cria_circulo(int id, float x, float y, float r, char cb, char cd, float area);
+CIRCULO cria_circulo(int id, float x, float y, float r, char cb, char cd);
 
 /**
  * @brief obtem o ID do circulo
