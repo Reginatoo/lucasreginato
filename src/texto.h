@@ -19,7 +19,7 @@ typedef void* TEXTO;
      * @return Retorna um ponteiro do tipo void para essa estrutura
      */
 
-TEXTO cria_texto(int id, float x, float y, char* cp, char a, char* ctd,  char* familia, char* peso, char* tam);
+TEXTO cria_texto(int id, float x, float y, char* cp, char* cb, char a, char* txt);
 
  /**
  * @brief obtem o ID do texto
@@ -99,7 +99,7 @@ char* get_tamT(TEXTO t);
  * @param tamanhoTexto O novo valor para o tamanho do texto. Um valor negativo indica que o atributo não deve ser alterado.
  */
 
-void set_estiloT(TEXTO t, char* cb, char* cp, char* eb, char* tam);
+void set_estiloT(TEXTO t, char* familia, char* peso, char* tam);
 
 /**
  * @brief atualiza a coordenada x do texto
