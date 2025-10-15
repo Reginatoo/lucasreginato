@@ -4,6 +4,7 @@
 #include "retangulo.h"
 #include <math.h>
 typedef struct{
+    char tipo;
     int id;
     float x, y, w, h;
     char *corb, *corp;
@@ -15,7 +16,8 @@ retang *r = malloc(sizeof(retang));
         printf("Erro na alocação de memória na criação do retangulo");
         exit(1);
     }
-
+    
+    r->tipo = 'r';
     r->id = id;
     r->x = x;
     r->y = y;

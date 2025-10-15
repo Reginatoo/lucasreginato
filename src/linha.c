@@ -4,6 +4,7 @@
 #include "linha.h"
 #include <math.h>
 typedef struct{
+    char tipo;
     int id;
     float x1, y1, x2, y2;
     char *cor;
@@ -15,7 +16,8 @@ lin *l = malloc(sizeof(lin));
         printf("Erro na alocação de memória na criação do linha");
         exit(1);
     }
-
+    
+    l->tipo = 'l';
     l->id = id;
     l->x1 = x1;
     l->y1 = y1;

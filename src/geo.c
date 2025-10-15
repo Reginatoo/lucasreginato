@@ -14,7 +14,9 @@ void processar_geo(char* caminho_geo, FILA chao, FILA arena, float* chao_x, floa
         printf(" não foi possível abrir o arquivo .geo!\n");
         exit(1);
     }
-
+    char estilo_familia[30] = "Arial";
+    char estilo_peso[30] = "normal";
+    char estilo_tam[30] = "12";
     char linha[600];
     char comando[10];
 
@@ -44,13 +46,16 @@ void processar_geo(char* caminho_geo, FILA chao, FILA arena, float* chao_x, floa
         FORMA nova_linha=cria_linha(id, x1, y1, x2, y2, cor);
         inserir_na_fila(chao, nova_linha);
      }
+      if (strcmp(comando, "ts") == 0) {
+            sscanf(linha, "ts %s %s %s", estilo_familia, estilo_peso, estilo_tam);
+        }
      if(strcmp(comando, "t")==0){
         int id;
         float x, y;
         char corb[20], corp[20], txt[30];
         char a;
         sscanf(linha, "t %d %f %f %s %s %c %s", &id, &x, &y, corb, corp, &a, txt);
-        FORMA novo_texto=cria_texto(id, x, y, corb, corp, a, txt);
+        FORMA novo_texto=cria_texto(id, x, y, corb, corp, a, txt, estilo_familia, estilo_peso, estilo_tam);
         inserir_na_fila(chao, novo_texto);
      }
      if (strcmp(comando, "chao") == 0) {
@@ -60,7 +65,6 @@ void processar_geo(char* caminho_geo, FILA chao, FILA arena, float* chao_x, floa
             sscanf(linha, "arena %f %f %f %f %s", arena_x, arena_y, arena_w, arena_h, arena_cor);
     }
 }
-printf("--- Fim da leitura do .geo ---\n");
     fclose(arquivo_geo);
 
 }

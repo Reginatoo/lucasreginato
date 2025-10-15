@@ -12,15 +12,14 @@ typedef void* TEXTO;
      * @param cp cor do preenchimento 
      * @param a Char para indicar onde fica a âncora do texto
      * @param ctd conteudo do texto
-     * @param familia A família da fonte (ex: "Arial", "sans-serif").
-     * @param peso O peso da fonte (ex: "normal", "bold").
-     * @param tam O tamanho da fonte (ex: "12px", "10").
+     * @param familia A família da fonte 
+     * @param peso O peso da fonte
+     * @param tam O tamanho da fonte 
 
      * @return Retorna um ponteiro do tipo void para essa estrutura
      */
 
-TEXTO cria_texto(int id, float x, float y, char* cp, char* cb, char a, char* txt);
-
+TEXTO cria_texto(int id, float x, float y, char* cb, char* cp, char a, char* txt, char* familia_atual, char* peso_atual, char* tam_atual);
  /**
  * @brief obtem o ID do texto
  * @param r o texto a ser consultado
@@ -60,7 +59,7 @@ char get_aT(TEXTO t);
  * @param t O objeto de texto a ser consultado.
  * @return Um ponteiro para a string que contém o texto.
  */
-char* get_ctdT(TEXTO t);
+char* get_txtT(TEXTO t);
 
 /**
  * @brief Calcula a área do texto
@@ -89,17 +88,7 @@ char* get_ebT(TEXTO t);
  */
 char* get_tamT(TEXTO t);
 
-/**
- * @brief Altera múltiplos atributos de estilo de um texto de uma só vez.
- * Esta função corresponde diretamente ao comando 'ts' do projeto.
- * @param t O objeto de texto a ser modificado.
- * @param cb A nova string para a cor da borda. Se o valor for "-", o atributo não é alterado.
- * @param cp A nova string para a cor de preenchimento. Se o valor for "-", o atributo não é alterado.
- * @param espessuraBorda O novo valor para a espessura da borda. Um valor negativo indica que o atributo não deve ser alterado.
- * @param tamanhoTexto O novo valor para o tamanho do texto. Um valor negativo indica que o atributo não deve ser alterado.
- */
 
-void set_estiloT(TEXTO t, char* familia, char* peso, char* tam);
 
 /**
  * @brief atualiza a coordenada x do texto

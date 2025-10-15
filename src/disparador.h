@@ -13,7 +13,7 @@ typedef void* CARREGADOR;
  * @param y A coordenada y da posição do disparador.
  * @return Um ponteiro para o Disparador criado.
  */
-DISPARADOR cria_disparador(int id, float x, float y);
+DISPARADOR cria_disparador(int id);
 
 /**
  * @brief Anexa os carregadores ao disparador
@@ -29,6 +29,14 @@ void disparador_anexar_carregadores(DISPARADOR d, CARREGADOR carregador_esquerdo
  * @param lado O lado do qual carregar
  */
 void disparador_selecionar_carga(DISPARADOR d, char lado);
+
+/**
+ * @brief Define a posição de um disparador
+ * @param d o disparador a ser consultado
+ * @param x a coordenada x do disparador
+ * @param y a coordenada y do disparador
+ */
+void disparador_set_posicao(DISPARADOR d, float x, float y);
 
 /**
  * @brief Dispara a forma que está na posição de disparo 
@@ -50,6 +58,19 @@ float disparador_get_x(DISPARADOR d);
  * @return A coordenada y do disparador
  */
 float disparador_get_y(DISPARADOR d);
+
+/**
+ * @brief Obtém a forma que está atualmente na posição de disparo, sem a remover
+ * @param d O disparador a ser consultado
+ * @return A forma que está em posição
+ */
+FORMA disparador_get_forma_em_posicao(DISPARADOR d);
+
+/**
+ * @brief Remove a forma da posição de disparo depois de ser usada
+ * @param d o disparador a ser consultado
+ */
+void disparador_limpa_posicao(DISPARADOR d);
 
 /**
  * @brief Libera toda a memória associada a um disparador

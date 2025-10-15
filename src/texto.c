@@ -4,19 +4,21 @@
 #include "texto.h"
 #include <math.h>
 typedef struct{
+    char tipo;
     int id;
     float x, y;
     char *corb, *corp, *txt, *familia, *peso, *tam;
     char a;
 }text;
 
-TEXTO cria_texto(int id, float x, float y, char* cb, char* cp, char a, char*txt){
+TEXTO cria_texto(int id, float x, float y, char* cb, char* cp, char a, char* txt, char* familia_atual, char* peso_atual, char* tam_atual){
 text *t = malloc(sizeof(text));
     if (t == NULL) {
         printf("Erro na alocação de memória na criação do texto");
         exit(1);
     }
-
+    
+    t->tipo = 't';
     t->id = id;
     t->x = x;
     t->y = y;
@@ -34,10 +36,9 @@ text *t = malloc(sizeof(text));
         printf("Erro na alocação de memória para a cor da borda");
         exit(1);}
 
-       
-        t->familia = strdup("Arial");
-        t->peso = strdup("normal");   
-        t->tam = strdup("12");
+        t->familia = strdup(familia_atual);
+        t->peso = strdup(peso_atual);
+        t->tam = strdup(tam_atual);
     return t;
     }
     int get_idT(TEXTO t){
@@ -109,23 +110,6 @@ void set_cpT(TEXTO t, char* corp){
         printf("Erro na alocação de memória para a cor de preenchimento");
         exit(1);}
      }
-void set_estiloT(TEXTO t, char* cb, char* cp, char* eb, char* tam){
- text* t1= (text*)t;
-
-    if (strcmp(cb, "-") != 0) {
-        free(t1->corb);
-        t1->corb = strdup(cb);
-    }
-    if (strcmp(cp, "-") != 0) {
-        free(t1->corp);
-        t1->corp = strdup(cp);
-    }
-
-   if (strcmp(tam, "-") != 0) {
-        free(t1->tam);
-        t1->tam = strdup(tam);
-    }}
-
 void kill_texto(TEXTO t) {
     text* t1 = (text*)t;
     if (t == NULL) {

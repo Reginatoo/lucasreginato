@@ -3,26 +3,29 @@
 #include <string.h>
 #include "fila.h"
 
-typedef struct{
+typedef struct no{
     form forma;
     struct no* proximo;
-}no;
+} no;
+
 typedef struct{
     no* inicio;
     no* fim;
     int tamanho;
-}filastruct;
+} filastruct;
 
 FILA cria_fila(){
     filastruct* q=(filastruct*)malloc(sizeof(filastruct));
     if (q==NULL){
         printf ("erro de alocação na fila \n");
+        exit(1);
     }
     q->inicio=NULL;
     q->fim=NULL;
     q->tamanho=0;
     return q;
 }
+
 void inserir_na_fila(FILA q, form f){
     filastruct* f1= (filastruct*)q;
     no* novo_no = (no*) malloc(sizeof(no));
@@ -40,8 +43,8 @@ void inserir_na_fila(FILA q, form f){
         f1->fim=novo_no;
     }
     f1->tamanho++;
-
 }
+
 form remover_da_fila(FILA q){
     filastruct* f1= (filastruct*)q;
     if(f1->inicio==NULL){
@@ -52,24 +55,43 @@ form remover_da_fila(FILA q){
     no* no_removido=f1->inicio;
     form forma_a_retornar=no_removido->forma;
     if(f1->inicio==f1->fim){
-    f1->inicio=NULL;
-    f1->fim=NULL;
+        f1->inicio=NULL;
+        f1->fim=NULL;
     }else{
-   f1->inicio=f1->inicio->proximo;
+        f1->inicio=f1->inicio->proximo;
     }
 
     free(no_removido);
     f1->tamanho--;
     return(forma_a_retornar);
 }
-void kill_fila(FILA q){
-    filastruct* f1=(filastruct*)q;
-    while(f1->tamanho!=0){     
-        no* no_removido=f1->inicio;
-        f1->inicio=f1->inicio->proximo;
-         free(no_removido);
-        f1->tamanho--;
 
+void* get_primeiro_no(FILA f) {
+    filastruct* fila = (filastruct*)f;
+    return fila->inicio;
+}
+
+void* get_proximo_no(void* No) {
+    return ((no*)No)->proximo;
+}
+
+void* get_info_do_no(void* No) {
+    return ((no*)No)->forma;
+}
+
+
+void kill_fila(FILA q, void (*destruir_forma)(form f)) {
+    filastruct* f1 = (filastruct*)q;
+    
+    no* no_atual = f1->inicio;
+    while (no_atual != NULL) {
+        no* no_a_remover = no_atual;
+        form forma_a_libertar = no_a_remover->forma;
+        no_atual = no_a_remover->proximo;
+        if (destruir_forma != NULL) {
+            destruir_forma(forma_a_libertar);
+        }
+        free(no_a_remover);
     }
     free(f1);
 }

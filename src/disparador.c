@@ -12,20 +12,25 @@ typedef struct
     CARREGADOR carregador_direito;
 }disp;
 
-DISPARADOR cria_disparador(int id, float x, float y ){
-disp *d=malloc(sizeof(disp));
-if (d==NULL){
-    printf ("erro na alocação do disparador");
-}
-d->id=id;
-d->x=x;
-d->y=y;
-
+DISPARADOR cria_disparador(int id) {
+    disp* d = malloc(sizeof(disp));
+    if (d == NULL) {
+        printf("erro na alocação do disparador\n");
+        exit(1);
+    }
+    d->id = id;
+    d->x = 0;
+    d->y = 0;
     d->forma = NULL;
     d->carregador_esquerdo = NULL;
     d->carregador_direito = NULL;
-
     return d;
+}
+
+void disparador_set_posicao(DISPARADOR d, float x, float y) {
+    disp* d1 = (disp*)d;
+    d1->x = x;
+    d1->y = y;
 }
 void disparador_anexar_carregadores(DISPARADOR d, CARREGADOR esquerdo, CARREGADOR direito){
     disp* d1=(disp*)d;
@@ -69,6 +74,9 @@ float disparador_get_x(DISPARADOR d) {
 
 float disparador_get_y(DISPARADOR d) {
     return ((disp*) d)->y;
+}
+FORMA disparador_get_forma_em_posicao(DISPARADOR d) {
+    return ((disp*)d)->forma;
 }
 
 void kill_disparador(DISPARADOR d) {

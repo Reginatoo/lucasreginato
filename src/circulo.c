@@ -5,6 +5,7 @@
 #include <math.h>
 #define M_PI 3.14159265358979323846
 typedef struct{
+    char tipo;
     int id;
     float x, y, r;
     char *corb, *corp;
@@ -16,7 +17,8 @@ circ *c = malloc(sizeof(circ));
         printf("Erro na alocação de memória na criação do circulo");
         exit(1);
     }
-
+    
+    c->tipo = 'c';
     c->id = id;
     c->x = x;
     c->y = y;

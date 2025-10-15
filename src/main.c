@@ -10,6 +10,18 @@
 #include "texto.h"
 #include "geo.h"
 
+
+void destruir_forma_generica(void* forma) {
+    if (forma == NULL) return;
+    char tipo = *((char*)forma);
+    switch (tipo) {
+        case 'c': kill_circulo(forma); break;
+        case 'r': kill_retangulo(forma); break;
+        case 'l': kill_linha(forma); break;
+        case 't': kill_texto(forma); break;
+    }
+}
+
 int main(int argc, char* argv[]){
     char* dir_entrada=NULL;
     char* arq_geo=NULL;
@@ -38,6 +50,10 @@ int main(int argc, char* argv[]){
     FILA chao=criar_fila();
     FILA arena=criar_fila();
 
+     DISPARADOR disparadores[100];
+     for(int i = 0; i<100; i++) {
+         disparadores[i] = criar_disparador();
+    }
      PILHA carregadores[100];
      for(int i = 0; i<100; i++) {
          carregadores[i] = criar_pilha();
