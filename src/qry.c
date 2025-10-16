@@ -97,20 +97,21 @@ FILE* arquivo_qry = fopen(caminho_qry, "r");
     char linha[600];
     char comando[10];
 
-    while (fgets(linha, sizeof(linha), arquivo_qry)) {
+    while (fgets(linha, sizeof(linha), arquivo_qry)){
      sscanf(linha, "%s", comando);
+
      if(strcmp (comando, "pd")==0){
     int d;
     float x, y;
     sscanf(linha, "pd %d %f %f", &d, &x, &y);
      disparador_set_posicao(disparadores[d], x, y);
      }
-     if (strcmp(comando, "atch") == 0) { 
+     if (strcmp(comando, "atch") == 0){ 
             int d, cesq, cdir;
             sscanf(linha, "atch %d %d %d", &d, &cesq, &cdir);
             disparador_anexa_carregadores(disparadores[d], carregadores[cesq], carregadores[cdir]);
         }
-        if (strcmp(comando, "shft") == 0) { 
+        if (strcmp(comando, "shft") == 0){ 
             int d, n;
             char lado;
             sscanf(linha, "shft %d %c %d", &d, &lado, &n);
@@ -119,9 +120,56 @@ FILE* arquivo_qry = fopen(caminho_qry, "r");
             }
             
             form forma_final = disparador_get_forma_em_posicao(disparadores[d]);
-            fprintf(arq_txt, "Forma em posicao de disparo");
+            fprintf(arq_txt, "Forma em posicao de disparo \n");
             imprimir_dados_forma(arq_txt, forma_final);
         }
+        if (strcmp(comando, "dsp") == 0){
+        int d, visu;
+        float dx, dy;
+        char v;
+        sscanf(linha, "dsp %d %f %f", &d, &dx, &dy);
+        if(strstr(linha, " v")!=NULL)visu=1;
+        form forma_disparada = disparador_disparar(disparadores[d]);
+        if (forma_disparada != NULL) {
+        float dispx = disparador_get_x(disparadores[d]);
+        float dispy = disparador_get_y(disparadores[d]);
+        float final_x = dispx + dx;
+        float final_y = dispy + dy;
+        
+        inserir_na_fila(arena, forma_disparada);
+        set_posicao_da_forma(forma_disparada, final_x, final_y);
+        fprintf(arq_txt, "Forma disparada \n");
+        imprimir_dados_forma(arq_txt, forma_disparada);
+        }
 
+    }
+    if (strcmp(comando, "rjd") == 0) {
+    int d;
+    char lado;
+    float dx, dy, ix, iy;
+    sscanf(linha, "rjd %d %c %f %f %f %f", &d, &lado, &dx, &dy, &ix, &iy);
+    PILHA carregador_ativo;
+    int i=0;
+    if (lado=='d'){
+    carregador_ativo=disparador_get_carregador_esquerdo(disparadores [d]);
+    }
+    if (lado=='e'){
+        carregador_ativo=disparador_get_carregador_direito (disparadores [d]);
+    }
+    while(carregador_ativo!=NULL&&!pilha_esta_vazia(carregador_ativo)){
+        disparador_selecionar_carga(disparadores[d], lado);
+    form forma_disparada = disparador_disparar(disparadores[d]);
+        if (forma_disparada != NULL) {
+        float dispx = disparador_get_x(disparadores[d]);
+        float dispy = disparador_get_y(disparadores[d]);
+        float final_x = dispx + dx+(i*ix);
+        float final_y = dispy + dy+(i*iy);
+        inserir_na_fila(arena, forma_disparada);
+        set_posicao_da_forma(forma_disparada, final_x, final_y);
+        }
+        
+        imprimir_dados_forma(arq_txt, forma_disparada);
+    i++;
+    }
     }
 }

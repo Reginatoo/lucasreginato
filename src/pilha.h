@@ -28,6 +28,13 @@ form remover_da_pilha(PILHA p);
 form get_ultimo_elementoP(PILHA p);
 
 /**
+ * @brief Verifica se a pilha está vazia
+ * @param p A pilha a ser verificada
+ * @return Retorna 1 se a pilha estiver vazia, 0 caso contrário
+ */
+int pilha_esta_vazia(PILHA p);
+
+/**
  * @brief Libera toda a memória ocupada pela pilha e seus elementos
  * @param q Ponteiro para a pilha que será destruído
  */

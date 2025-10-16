@@ -49,6 +49,15 @@ form remover_da_pilha(PILHA p){
     p1->tamanho--;
     return(forma_a_retornar);
 }
+int pilha_esta_vazia(PILHA p) {
+    pilhastruct* p1 = (pilhastruct*)p;
+    
+    if (p1->topo == NULL) {
+        return 1; 
+    } else {
+        return 0; 
+    }
+}
 void kill_pilha(PILHA p){
     pilhastruct* p1=(pilhastruct*)p;
     while(p1->tamanho!=0){     

@@ -40,7 +40,7 @@ void disparador_anexar_carregadores(DISPARADOR d, CARREGADOR esquerdo, CARREGADO
 
 void disparador_selecionar_carga(DISPARADOR d, char lado){
     disp* d1=(disp*)d;
-    if(lado=='d'){
+    if(lado=='e'){
         if(d1->carregador_direito==NULL) return;
         FORMA nova_forma=remover_da_pilha(d1->carregador_direito);
         if (nova_forma==NULL) return;
@@ -49,7 +49,7 @@ void disparador_selecionar_carga(DISPARADOR d, char lado){
         }
         d1->forma=nova_forma;
     }
-    if(lado=='e'){
+    if(lado=='d'){
         if(d1->carregador_esquerdo==NULL) return;
         FORMA nova_forma=remover_da_pilha(d1->carregador_esquerdo);
         if (nova_forma==NULL) return;
@@ -77,6 +77,13 @@ float disparador_get_y(DISPARADOR d) {
 }
 FORMA disparador_get_forma_em_posicao(DISPARADOR d) {
     return ((disp*)d)->forma;
+}
+PILHA disparador_get_carregador_esquerdo(DISPARADOR d) {
+    return ((disp*)d)->carregador_esquerdo;
+}
+
+PILHA disparador_get_carregador_direito(DISPARADOR d) {
+    return ((disp*)d)->carregador_direito;
 }
 
 void kill_disparador(DISPARADOR d) {

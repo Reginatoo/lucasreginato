@@ -73,6 +73,19 @@ FORMA disparador_get_forma_em_posicao(DISPARADOR d);
 void disparador_limpa_posicao(DISPARADOR d);
 
 /**
+ * @brief Obtém o carregador que está anexado no lado esquerdo do disparador
+ * @param d O disparador a ser consultado
+ * @return A PILHA que representa o carregador esquerdo
+ */
+PILHA disparador_get_carregador_esquerdo(DISPARADOR d);
+
+/**
+ * @brief Obtém o carregador que está anexado no lado direito do disparador
+ * @param d O disparador a ser consultado
+ * @return A PILHA que representa o carregador direito
+ */
+PILHA disparador_get_carregador_direito(DISPARADOR d);
+/**
  * @brief Libera toda a memória associada a um disparador
  * @param d O disparador a ser destruído
  */
