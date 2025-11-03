@@ -125,6 +125,13 @@ void set_Y2L(LINHA l, float y2);
 void set_CorL(LINHA l, char *cor);
 
 /**
+ * @brief atualiza o id da linha
+ * @param l a linha a ser consultada
+ * @param id o novo valor para o id
+ */
+void set_idL(LINHA l, int id);
+
+/**
  * @brief destroi a estrutura da linha e libera a memoria
  * @param l a linha a ser consultada
  */

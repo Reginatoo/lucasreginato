@@ -55,7 +55,7 @@ int main(int argc, char* argv[]){
     }
 
     FILA chao=criar_fila();
-    FILA arena=criar_fila(); // RESTAURADO
+    FILA arena=criar_fila(); 
     DISPARADOR disparadores[100];
     for(int i = 0; i<100; i++) {
         disparadores[i] = cria_disparador();
@@ -77,7 +77,7 @@ int main(int argc, char* argv[]){
         strcpy(caminho_geo, arq_geo);
     }
 
-    processar_geo(caminho_geo, chao, arena, &chao_x, &chao_y, &chao_w, &chao_h, chao_cor, &arena_x, &arena_y, &arena_w, &arena_h, arena_cor); // RESTAURADO
+    processar_geo(caminho_geo, chao, arena, &chao_x, &chao_y, &chao_w, &chao_h, chao_cor, &arena_x, &arena_y, &arena_w, &arena_h, arena_cor); 
 
     char nome_base_geo[100];
     extrair_nome_base(arq_geo, nome_base_geo);
@@ -85,7 +85,7 @@ int main(int argc, char* argv[]){
     sprintf(caminho_svg_base, "%s/%s.svg", dir_saida, nome_base_geo);
     printf("Desenhando SVG inicial em: %s\n", caminho_svg_base);
 
-    desenhar_svg(caminho_svg_base, chao, arena, chao_x, chao_y, chao_w, chao_h, chao_cor); // RESTAURADO
+    desenhar_svg(caminho_svg_base, chao, arena, chao_x, chao_y, chao_w, chao_h, chao_cor); 
 
     if (arq_qry != NULL) {
         printf("Processando ficheiro QRY: %s\n", arq_qry);
@@ -104,7 +104,7 @@ int main(int argc, char* argv[]){
         sprintf(caminho_svg_final, "%s/%s-%s.svg", dir_saida, nome_base_geo, nome_base_qry);
 
         processar_qry(caminho_qry, caminho_svg_base, caminho_svg_final, caminho_txt,
-                      chao, arena, carregadores, disparadores, // RESTAURADO
+                      chao, arena, carregadores, disparadores, 
                       chao_x, chao_y, chao_w, chao_h, chao_cor);
 
     } else {
@@ -113,7 +113,7 @@ int main(int argc, char* argv[]){
 
     printf("Limpando memória...\n");
     kill_fila(chao, destruir_forma_generica);
-    kill_fila(arena, destruir_forma_generica); // RESTAURADO
+    kill_fila(arena, destruir_forma_generica); 
 
     for (int i = 0; i < 100; i++) {
         kill_pilha(carregadores[i], destruir_forma_generica);

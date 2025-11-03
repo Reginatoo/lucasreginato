@@ -118,7 +118,17 @@ void set_xT(TEXTO t, float x);
  */
 void set_yT(TEXTO t, float y);
 
+/**
+ * @brief Obtém a família da fonte do texto.
+ * @param t O texto a ser consultado.
+ * @return Uma string com o nome da família da fonte.
+ */
 char* get_familiaT(TEXTO t);
+/**
+ * @brief Obtém o peso da fonte do texto (ex: "normal", "bold").
+ * @param t O texto a ser consultado.
+ * @return Uma string com o peso da fonte.
+ */
 char* get_pesoT(TEXTO t);
 
 /**
@@ -128,6 +138,19 @@ char* get_pesoT(TEXTO t);
  */
 void set_cbT(TEXTO t, const char* cb);
 
+/**
+ * @brief atualiza o id do texto
+ * @param t o texto a ser consultado
+ * @param id o novo valor para o id
+ */
+void set_idT(TEXTO t, int id);
+
+/**
+ * @brief atualiza a cor de preenchimento do texto
+ * @param t o texto a ser consultado
+ * @param corp a nova string da cor de preenchimento
+ */
+void set_cpT(TEXTO t, const char* corp);
 /**
  * @brief destroi a estrutura do texto e libera a memoria
  * @param c o texto a ser consultado
