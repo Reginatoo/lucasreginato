@@ -4,6 +4,7 @@
 #include "retangulo.h"
 #include <math.h>
 typedef struct{
+    char tipo;
     int id;
     float x, y, w, h;
     char *corb, *corp;
@@ -15,7 +16,8 @@ retang *r = malloc(sizeof(retang));
         printf("Erro na alocação de memória na criação do retangulo");
         exit(1);
     }
-
+    
+    r->tipo = 'r';
     r->id = id;
     r->x = x;
     r->y = y;
@@ -42,10 +44,10 @@ float get_YR(RETANGULO r){
      return ((retang*)r)->y;
 }
 
-float get_wR(RETANGULO r){
+float get_WR(RETANGULO r){
     return ((retang*)r)->w;
 }
-float get_hR(RETANGULO r){
+float get_HR(RETANGULO r){
     return ((retang*)r)->h;
 }
 
@@ -56,19 +58,47 @@ char* get_cbR(RETANGULO r){
 char* get_cpR(RETANGULO r){
      return ((retang*)r)->corp;
 }
+RETANGULO clone_retangulo(RETANGULO r) {
+    if (r == NULL) return NULL;
+    
+    return cria_retangulo(
+        get_idR(r),
+        get_XR(r),
+        get_YR(r),
+        get_WR(r),
+        get_HR(r),
+        get_cbR(r),
+        get_cpR(r) 
+    );
+}
+
+void set_posicaoR(RETANGULO r, float x, float y) {
+    retang* r1 = (retang*)r;
+
+    r1->x = x;
+    r1->y = y;
+}
 
 float get_areaR(RETANGULO r){
    return ((retang*)r)->h * ((retang*)r)->w;
 }
-void set_xR(RETANGULO r, float x){
+void set_XR(RETANGULO r, float x){
     ((retang*)r)->x = x;
 }
 
-void set_yR(RETANGULO r, float y){
+void set_YR(RETANGULO r, float y){
     ((retang*)r)->y = y;
 }
 
-void set_cbR(RETANGULO r, char* cb){
+void set_WR(RETANGULO r, float w){
+    ((retang*)r)->w = w;
+}
+
+void set_HR(RETANGULO r, float h){
+    ((retang*)r)->h = h;
+}
+
+void set_cbR(RETANGULO r, const char* cb){
     retang* r1 = (retang*)r;
     free(r1->corb);
     r1->corb = strdup(cb);
@@ -82,7 +112,7 @@ void set_idR(RETANGULO r, int id){
    ((retang*)r)->id = id;
 }
 
-void set_cpR(RETANGULO r, char* corp){
+void set_cpR(RETANGULO r, const char* corp){
     retang* r1 = (retang*)r;
     free(r1->corp);
     r1->corp = strdup(corp);

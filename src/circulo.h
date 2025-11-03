@@ -10,10 +10,10 @@ typedef void* CIRCULO;
 *@param y coordenada y do circulo
 *@param r raio do circulo
 *@param cb cor da borda do circulo
-*@param cd cor de dentro do circulo
+*@param cp cor de dentro do circulo
 *@return é retornado um ponteiro pelo CIRCULO para a estrutura de circulo criada
 */
-CIRCULO cria_circulo(int id, float x, float y, float r, char cb, char cd, float area);
+CIRCULO cria_circulo(int id, float x, float y, float r, char* cb, char* cp);
 
 /**
  * @brief obtem o ID do circulo
@@ -55,7 +55,7 @@ char* get_cbC(CIRCULO c);
  * @param c o circulo a ser consultado
  * @return float o valor da cor de dentro do circulo
  */
-char* get_cdC(CIRCULO c);
+char* get_cpC(CIRCULO c);
 
  /**
  * @brief Calcula a área do círculo
@@ -64,6 +64,11 @@ char* get_cdC(CIRCULO c);
  */
 
  float get_areaC(CIRCULO c);
+/**
+ * @brief clona o circulo
+ * @param o circulo a ser consultado
+ */
+ CIRCULO clone_circulo(CIRCULO c);
 
 /**
  * @brief atualiza o id do círculo.
@@ -71,6 +76,14 @@ char* get_cdC(CIRCULO c);
  * @param id o novo valor para o id do circulo
  */
 void set_idC(CIRCULO c, int id);
+
+/**
+ * @brief Define a nova posição da âncora do círculo
+ * @param c O círculo a ser modificado
+ * @param x A nova coordenada x do centro
+ * @param y A nova coordenada y do centro
+ */
+void set_posicaoC(CIRCULO c, float x, float y);
 
 /**
  * @brief atualiza a coordenada x do centro do círculo.
@@ -103,9 +116,9 @@ void set_cbC(CIRCULO c, const char* cb);
 /**
  * @brief atualiza a cor de dentro do circulo
  * @param c o circulo a ser consultado
- * @param cd a nova string para a cor de dentro do circulo
+ * @param cp a nova string para a cor de dentro do circulo
  */
-void set_cdC(CIRCULO c, const char* cb);
+void set_cpC(CIRCULO c, const char* cp);
 
 /**
  * @brief destroi a estrutura do circulo e libera a memoria

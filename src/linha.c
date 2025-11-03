@@ -4,6 +4,7 @@
 #include "linha.h"
 #include <math.h>
 typedef struct{
+    char tipo;
     int id;
     float x1, y1, x2, y2;
     char *cor;
@@ -15,7 +16,8 @@ lin *l = malloc(sizeof(lin));
         printf("Erro na alocação de memória na criação do linha");
         exit(1);
     }
-
+    
+    l->tipo = 'l';
     l->id = id;
     l->x1 = x1;
     l->y1 = y1;
@@ -39,35 +41,50 @@ float get_Y1L(LINHA l){
      return ((lin*)l)->y1;
 }
 
-float get_x2L(LINHA l){
+float get_X2L(LINHA l){
     return ((lin*)l)->x2;
 }
-float get_y2L(LINHA l){
+float get_Y2L(LINHA l){
     return ((lin*)l)->y2;
 }
 
-char* get_cL(LINHA l){
+char* get_CorL(LINHA l){
      return ((lin*)l)->cor;
 }
-float get_areaL(LINHA l){
-   lin* l1 = (lin*)l;
-   float dx= l1->x1 - l1->x2;
-   float dy= l1->y1 - l1->y2;
-   float comprimento= sqrt((dx*dx)+(dy*dy));
-   return comprimento;
+float get_areaL(LINHA l) {
+    lin* l1 = (lin*)l;
+    float dx = l1->x1 - l1->x2;
+    float dy = l1->y1 - l1->y2;
+    float comprimento = sqrt((dx*dx) + (dy*dy));
+    return 2.0 * comprimento;
 }
-void set_x1L(LINHA l, float x1){
+LINHA clone_linha(LINHA l) {
+    if (l == NULL) return NULL;
+
+    return cria_linha(
+        get_idL(l),
+        get_X1L(l),
+        get_Y1L(l),
+        get_X2L(l),
+        get_Y2L(l),
+        get_CorL(l)
+    );
+}
+void set_X1L(LINHA l, float x1){
     ((lin*)l)->x1 = x1;
 }
-void set_x2L(LINHA l, float x2){
+void set_X2L(LINHA l, float x2){
     ((lin*)l)->x2 = x2;
 }
 
-void set_y1L(LINHA l, float y1){
+void set_Y1L(LINHA l, float y1){
     ((lin*)l)->y1 = y1;
 }
+void set_Y2L(LINHA l, float y2){
+    ((lin*)l)->y2 = y2;
+}
 
-void set_cL(LINHA l, char* c){
+void set_CorL(LINHA l, char* c){
     lin* c1 = (lin*)l;
     free(c1->cor);
     c1->cor = strdup(c);
@@ -76,12 +93,22 @@ void set_cL(LINHA l, char* c){
         exit(1);}
     
 }
+void set_posicaoL(LINHA l, float x, float y) {
+    lin* l1 = (lin*)l;
+    
+    float delta_x = l1->x2 - l1->x1;
+    float delta_y = l1->y2 - l1->y1;
+    l1->x1 = x;
+    l1->y1 = y;
+    l1->x2 = x + delta_x;
+    l1->y2 = y + delta_y;
+}
 
 void set_idL(LINHA l, int id){
    ((lin*)l)->id = id;
 }
 
-void kill_lin(LINHA c){
+void kill_linha(LINHA c){
     lin* c1 = (lin*)c;
     if (c1 == NULL) {
         return;

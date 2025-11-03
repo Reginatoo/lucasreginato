@@ -12,11 +12,14 @@ typedef void* TEXTO;
      * @param cp cor do preenchimento 
      * @param a Char para indicar onde fica a âncora do texto
      * @param ctd conteudo do texto
+     * @param familia A família da fonte 
+     * @param peso O peso da fonte
+     * @param tam O tamanho da fonte 
+
      * @return Retorna um ponteiro do tipo void para essa estrutura
      */
 
-TEXTO cria_texto(int id, float x, float y, char* cp, char a, char* ctd);
-
+TEXTO cria_texto(int id, float x, float y, char* cb, char* cp, char a, char* txt, char* familia_atual, char* peso_atual, char* tam_atual);
  /**
  * @brief obtem o ID do texto
  * @param r o texto a ser consultado
@@ -44,6 +47,14 @@ float get_yT(TEXTO t);
 char* get_cpT(TEXTO t);
 
 /**
+ * @brief Define a nova posição da âncora do texto
+ * @param t O texto a ser modificado
+ * @param x A nova coordenada x
+ * @param y A nova coordenada y
+ */
+void set_posicaoT(TEXTO t, float x, float y);
+
+/**
  * @brief Obtém o caractere de ancoragem do texto.
  * A âncora define o ponto de alinhamento do texto (início, meio ou fim).
  * @param t O objeto de texto a ser consultado.
@@ -56,7 +67,13 @@ char get_aT(TEXTO t);
  * @param t O objeto de texto a ser consultado.
  * @return Um ponteiro para a string que contém o texto.
  */
-char* get_ctdT(TEXTO t);
+char* get_txtT(TEXTO t);
+/**
+ * @brief Cria e retorna um novo texto que é uma cópia exata do original.
+ * @param t O texto a ser clonado.
+ * @return Um ponteiro para o novo texto (um clone).
+ */
+TEXTO clone_texto(TEXTO t);
 
 /**
  * @brief Calcula a área do texto
@@ -76,26 +93,16 @@ char* get_cbT(TEXTO t);
  * @param t O objeto de texto a ser consultado
  * @return O valor numérico da espessura da borda
  */
-float get_ebT(TEXTO t);
+char* get_ebT(TEXTO t);
 
 /**
  * @brief Obtém o tamanho da fonte do texto
  * @param t O objeto de texto a ser consultado
  * @return O valor numérico do tamanho da fonte
  */
-float get_tamT(TEXTO t);
+char* get_tamT(TEXTO t);
 
-/**
- * @brief Altera múltiplos atributos de estilo de um texto de uma só vez.
- * Esta função corresponde diretamente ao comando 'ts' do projeto.
- * @param t O objeto de texto a ser modificado.
- * @param cb A nova string para a cor da borda. Se o valor for "-", o atributo não é alterado.
- * @param cp A nova string para a cor de preenchimento. Se o valor for "-", o atributo não é alterado.
- * @param espessuraBorda O novo valor para a espessura da borda. Um valor negativo indica que o atributo não deve ser alterado.
- * @param tamanhoTexto O novo valor para o tamanho do texto. Um valor negativo indica que o atributo não deve ser alterado.
- */
 
-void set_estiloT(TEXTO t, char* cb, char* cp, float eb, float tam);
 
 /**
  * @brief atualiza a coordenada x do texto
@@ -110,6 +117,16 @@ void set_xT(TEXTO t, float x);
  * @param y o novo valor para coordenada y
  */
 void set_yT(TEXTO t, float y);
+
+char* get_familiaT(TEXTO t);
+char* get_pesoT(TEXTO t);
+
+/**
+ * @brief atualiza a cor da borda do texto
+ * @param t o texto a ser consultado
+ * @param cb a nova string da cor da borda
+ */
+void set_cbT(TEXTO t, const char* cb);
 
 /**
  * @brief destroi a estrutura do texto e libera a memoria

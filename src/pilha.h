@@ -21,18 +21,17 @@ void inserir_na_pilha(PILHA p, form f );
  */
 form remover_da_pilha(PILHA p);
 /**
- * @brief obtem a ultima forma da pilha sem remove-la
- * @param q a pilha a ser consultada
- * @return O ponteiro para a forma no final da pilha
+ * @brief Verifica se a pilha está vazia
+ * @param p A pilha a ser verificada
+ * @return Retorna 1 se a pilha estiver vazia, 0 caso contrário
  */
-form get_ultimo_elementoP(PILHA p);
+int pilha_esta_vazia(PILHA p);
 
 /**
  * @brief Libera toda a memória ocupada pela pilha e seus elementos
  * @param q Ponteiro para a pilha que será destruído
  */
-
-void kill_pilha(PILHA q);
+void kill_pilha(PILHA q, void (*destruir_forma)(form f));
 
 
 #endif

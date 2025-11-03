@@ -21,18 +21,46 @@ void inserir_na_fila(FILA q, form f );
  */
 form remover_da_fila(FILA q);
 /**
- * @brief obtem a primeira forma da lista sem remove-la
+ * @brief obtem a primeira no da fila sem remove-la
  * @param q a fila a ser consultada
  * @return O ponteiro para a forma no início da fila
  */
-form get_primeiro_elementoF(FILA q);
+void* get_primeiro_no(FILA q);
 
 /**
- * @brief Libera toda a memória ocupada pela fila e seus elementos
- * @param q Ponteiro para a fila que será destruído
+ * @brief Verifica se a fila está vazia
+ * @param f A fila a ser verificada
+ * @return Retorna 1 (verdadeiro) se a fila estiver vazia, 0 (falso) caso contrário
  */
+int fila_esta_vazia(FILA f);
 
-void kill_fila(FILA q);
+/**
+ * @brief Obtém o número de elementos na fila
+ * @param f A fila a ser consultada
+ * @return O número de elementos
+ */
+int tamanho_fila(FILA f);
+
+/**
+ * @brief obtem o proxima no da fila sem remove-la
+ * @param q a fila a ser consultada
+ * @return O ponteiro para a forma no início da fila
+ */
+void* get_proximo_no(void* no);
+
+/**
+ * @brief obtem a forma do no
+ * @param q a fila a ser consultada
+ * @return retorna a forma do no
+ */
+void* get_info_do_no(void* no);
+
+/**
+ * @brief Destroi a fila e todos os seus elementos.
+ * @param q A fila a ser destruída.
+ * @param destruir_forma Uma função que sabe como libertar a memória de uma forma.
+ */
+void kill_fila(FILA q, void (*destruir_forma)(form f));
 
 
 #endif

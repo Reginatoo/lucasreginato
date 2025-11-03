@@ -18,12 +18,22 @@ typedef void* LINHA;
 
  LINHA cria_linha(int i, float x1, float y1, float x2, float y2, char* c);
 
+
+
+/**
+ * @brief Define a nova posição da âncora da linha
+ * @param l A linha a ser modificada
+ * @param x A nova coordenada x para o ponto 1
+ * @param y A nova coordenada y para o ponto 1
+ */
+void set_posicaoL(LINHA l, float x, float y);
+
+
 /**
  * @brief obtem o id do linha
  * @param l a linha do qual será obtida o id
  * @return O id da linha
 */
-
 int get_idL (LINHA l);
 
 /**
@@ -31,14 +41,13 @@ int get_idL (LINHA l);
  * @param l A linha do qual será obtida a coordenada x1
  * @return A coordenada x1 da linha
 */
-
 float get_X1L(LINHA l);
+
 /**
  * @brief obtem o valor da coordenada x2 do linha
  * @param l A linha do qual será obtida a coordenada x2
  * @return A coordenada x2 da linha  
 */
-
 float get_X2L(LINHA l);
 
 /**
@@ -46,7 +55,6 @@ float get_X2L(LINHA l);
  * @param l A linha do qual será obtida a coordenada y1
  * @return A coordenada y1 da linha
 */
-
 float get_Y1L(LINHA l);
 
 /**
@@ -54,7 +62,6 @@ float get_Y1L(LINHA l);
  * @param l A linha do qual será obtida a coordenada y2
  * @return A coordenada y2 da linha
 */
-
 float get_Y2L(LINHA l);
 
 /**
@@ -69,8 +76,14 @@ float get_areaL(LINHA l);
  * @return Uma string com a cor de preenchimento da linha
  *
 */
-
 char *get_CorL(LINHA l);
+
+/**
+ * @brief Cria e retorna uma nova linha que é uma cópia exata do original
+ * @param l A linha a ser clonada
+ * @return Um ponteiro para a nova linha
+ */
+LINHA clone_linha(LINHA l);
 
 /**
  * @brief altera a coordenada x da linha
@@ -109,13 +122,12 @@ void set_Y2L(LINHA l, float y2);
  * @param l O objeto linha cujo a cor será atualizado
  * @param cor Novo valor a ser atribuído à cor
 */
-
 void set_CorL(LINHA l, char *cor);
+
 /**
  * @brief destroi a estrutura da linha e libera a memoria
  * @param l a linha a ser consultada
  */
-
 void kill_linha(LINHA l);
 
 #endif

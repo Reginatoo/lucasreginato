@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "linha.h": "c"
+        "linha.h": "c",
+        "stdlib.h": "c",
+        "disparador.h": "c"
     }
 }

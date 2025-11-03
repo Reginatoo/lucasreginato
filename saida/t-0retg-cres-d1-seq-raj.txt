@@ -1,0 +1,65 @@
+Carregando 20 formas no carregador 3:
+ Retangulo ID:5, X:30.313610, Y:485.355072, W:13.500000, H:17.299999, Borda:#784421, Preench:#00aa88
+ Retangulo ID:6, X:244.502274, Y:352.510437, W:17.000000, H:19.600000, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:7, X:208.111130, Y:364.721039, W:20.500000, H:21.900000, Borda:#784421, Preench:#00aa88
+ Retangulo ID:8, X:280.226807, Y:502.669250, W:24.000000, H:24.200001, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:9, X:445.427704, Y:161.239746, W:27.500000, H:26.500000, Borda:#784421, Preench:#00aa88
+ Retangulo ID:10, X:119.684776, Y:216.874619, W:31.000000, H:28.799999, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:11, X:331.330780, Y:184.813354, W:34.500000, H:31.100000, Borda:#784421, Preench:#00aa88
+ Retangulo ID:12, X:394.455353, Y:97.672958, W:38.000000, H:33.400002, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:13, X:71.205055, Y:263.726349, W:41.500000, H:35.700001, Borda:#784421, Preench:#00aa88
+ Retangulo ID:14, X:325.387665, Y:145.745255, W:45.000000, H:38.000000, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:15, X:30.091255, Y:416.485626, W:48.500000, H:40.299999, Borda:#784421, Preench:#00aa88
+ Retangulo ID:16, X:266.954224, Y:506.927246, W:52.000000, H:42.599998, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:17, X:390.496185, Y:330.293304, W:55.500000, H:44.900002, Borda:#784421, Preench:#00aa88
+ Retangulo ID:18, X:415.273804, Y:446.868225, W:59.000000, H:47.200001, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:19, X:131.907593, Y:217.633347, W:62.500000, H:49.500000, Borda:#784421, Preench:#00aa88
+ Retangulo ID:20, X:455.123932, Y:460.385895, W:66.000000, H:51.799999, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:21, X:410.368744, Y:481.561035, W:69.500000, H:54.099998, Borda:#784421, Preench:#00aa88
+ Retangulo ID:22, X:294.480011, Y:75.814781, W:69.500000, H:56.400002, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:23, X:433.835480, Y:156.802261, W:69.500000, H:58.700001, Borda:#784421, Preench:#00aa88
+ Retangulo ID:24, X:498.141357, Y:171.984085, W:69.500000, H:61.000000, Borda:#6600ff, Preench:#c8ab37
+Disparando todas as formas do carregador ESQUERDO (disparador 5):
+ Retangulo ID:24, X:10.000000, Y:11.500000, W:69.500000, H:61.000000, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:23, X:19.000000, Y:22.000000, W:69.500000, H:58.700001, Borda:#784421, Preench:#00aa88
+ Retangulo ID:22, X:28.000000, Y:32.500000, W:69.500000, H:56.400002, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:21, X:37.000000, Y:43.000000, W:69.500000, H:54.099998, Borda:#784421, Preench:#00aa88
+ Retangulo ID:20, X:46.000000, Y:53.500000, W:66.000000, H:51.799999, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:19, X:55.000000, Y:64.000000, W:62.500000, H:49.500000, Borda:#784421, Preench:#00aa88
+ Retangulo ID:18, X:64.000000, Y:74.500000, W:59.000000, H:47.200001, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:17, X:73.000000, Y:85.000000, W:55.500000, H:44.900002, Borda:#784421, Preench:#00aa88
+ Retangulo ID:16, X:82.000000, Y:95.500000, W:52.000000, H:42.599998, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:15, X:91.000000, Y:106.000000, W:48.500000, H:40.299999, Borda:#784421, Preench:#00aa88
+ Retangulo ID:14, X:100.000000, Y:116.500000, W:45.000000, H:38.000000, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:13, X:109.000000, Y:127.000000, W:41.500000, H:35.700001, Borda:#784421, Preench:#00aa88
+ Retangulo ID:12, X:118.000000, Y:137.500000, W:38.000000, H:33.400002, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:11, X:127.000000, Y:148.000000, W:34.500000, H:31.100000, Borda:#784421, Preench:#00aa88
+ Retangulo ID:10, X:136.000000, Y:158.500000, W:31.000000, H:28.799999, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:9, X:145.000000, Y:169.000000, W:27.500000, H:26.500000, Borda:#784421, Preench:#00aa88
+ Retangulo ID:8, X:154.000000, Y:179.500000, W:24.000000, H:24.200001, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:7, X:163.000000, Y:190.000000, W:20.500000, H:21.900000, Borda:#784421, Preench:#00aa88
+ Retangulo ID:6, X:172.000000, Y:200.500000, W:17.000000, H:19.600000, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:5, X:181.000000, Y:211.000000, W:13.500000, H:17.299999, Borda:#784421, Preench:#00aa88
+Processando colisoes na arena:
+  > Verificando ID 24 (area 4239.50) vs ID 23 (area 4079.65): SOBREPOSICAO
+    >> Resultado: Forma ID 24 modificou ID 23 e se clonou. Todas voltam para o chao.
+  > Verificando ID 22 (area 3919.80) vs ID 21 (area 3759.95): SOBREPOSICAO
+    >> Resultado: Forma ID 22 modificou ID 21 e se clonou. Todas voltam para o chao.
+  > Verificando ID 20 (area 3418.80) vs ID 19 (area 3093.75): SOBREPOSICAO
+    >> Resultado: Forma ID 20 modificou ID 19 e se clonou. Todas voltam para o chao.
+  > Verificando ID 18 (area 2784.80) vs ID 17 (area 2491.95): SOBREPOSICAO
+    >> Resultado: Forma ID 18 modificou ID 17 e se clonou. Todas voltam para o chao.
+  > Verificando ID 16 (area 2215.20) vs ID 15 (area 1954.55): SOBREPOSICAO
+    >> Resultado: Forma ID 16 modificou ID 15 e se clonou. Todas voltam para o chao.
+  > Verificando ID 14 (area 1710.00) vs ID 13 (area 1481.55): SOBREPOSICAO
+    >> Resultado: Forma ID 14 modificou ID 13 e se clonou. Todas voltam para o chao.
+  > Verificando ID 12 (area 1269.20) vs ID 11 (area 1072.95): SOBREPOSICAO
+    >> Resultado: Forma ID 12 modificou ID 11 e se clonou. Todas voltam para o chao.
+  > Verificando ID 10 (area 892.80) vs ID 9 (area 728.75): SOBREPOSICAO
+    >> Resultado: Forma ID 10 modificou ID 9 e se clonou. Todas voltam para o chao.
+  > Verificando ID 8 (area 580.80) vs ID 7 (area 448.95): SOBREPOSICAO
+    >> Resultado: Forma ID 8 modificou ID 7 e se clonou. Todas voltam para o chao.
+  > Verificando ID 6 (area 333.20) vs ID 5 (area 233.55): SOBREPOSICAO
+    >> Resultado: Forma ID 6 modificou ID 5 e se clonou. Todas voltam para o chao.
+Pontuacao do Round: 0.00
+Pontuacao Total Acumulada: 0.00
