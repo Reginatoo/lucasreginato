@@ -37,6 +37,21 @@ float get_XR(RETANGULO r);
 float get_YR(RETANGULO r);
 
 /**
+ * @brief Define a nova posição da âncora do retângulo.
+ * @param r O retângulo a ser modificado
+ * @param x A nova coordenada x do canto
+ * @param y A nova coordenada y do canto
+ */
+void set_posicaoR(RETANGULO r, float x, float y);
+
+/**
+ * @brief Cria e retorna um novo retângulo que é uma cópia exata do original
+ * @param r O retângulo a ser clonado
+ * @return Um ponteiro para o novo retângulo
+ */
+RETANGULO clone_retangulo(RETANGULO r);
+
+/**
  * @brief obtem a largura do retangulo
  * @param r o retangulo a ser consultado
  * @return float o valor da largura do retangulo
@@ -55,14 +70,14 @@ float get_HR(RETANGULO r);
  * @param r o retangulo a ser consultado
  * @return float o valor da cor da borda do retangulo
  */
-char get_cbR(RETANGULO r);
+char* get_cbR(RETANGULO r);
 
 /**
  * @brief obtem a cor de dentro do retangulo
  * @param r o retangulo a ser consultado
  * @return float o valor da cor de dentro do retangulo
  */
-char get_cpR(RETANGULO r);
+char* get_cpR(RETANGULO r);
 
 float get_areaR(RETANGULO r);
 
@@ -89,15 +104,15 @@ void set_YR(RETANGULO r, float y);
 
 /**
  * @brief atualiza a largura do retangulo.
- * @param r o retangulo a ser consultado
- * @param r o novo valor para a largura
+ * @param r o retangulo a ser consultado.
+ * @param w o novo valor para a largura.
  */
-void set_WR(RETANGULO r, float L);
+void set_WR(RETANGULO r, float w);
 
 /**
  * @brief atualiza a altura do retangulo.
- * @param r o retangulo a ser consultado
- * @param r o novo valor para a altura
+ * @param r o retangulo a ser consultado.
+ * @param h o novo valor para a altura.
  */
 void set_HR(RETANGULO r, float h);
 
@@ -110,10 +125,10 @@ void set_cbR(RETANGULO r, const char* cb);
 
 /**
  * @brief atualiza a cor de dentro do retangulo
- * @param r o retangulo a ser consultado
- * @param cd a nova string da cor de dentro do retangulo
+ * @param r o retangulo a ser consultado.
+ * @param cp a nova string da cor de dentro do retangulo.
  */
-void set_cdR(RETANGULO r, const char* cd);
+void set_cpR(RETANGULO r, const char* cp);
 
 /**
  * @brief destroi a estrutura do retangulo e libera a memoria

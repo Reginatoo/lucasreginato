@@ -28,6 +28,20 @@ form remover_da_fila(FILA q);
 void* get_primeiro_no(FILA q);
 
 /**
+ * @brief Verifica se a fila está vazia
+ * @param f A fila a ser verificada
+ * @return Retorna 1 (verdadeiro) se a fila estiver vazia, 0 (falso) caso contrário
+ */
+int fila_esta_vazia(FILA f);
+
+/**
+ * @brief Obtém o número de elementos na fila
+ * @param f A fila a ser consultada
+ * @return O número de elementos
+ */
+int tamanho_fila(FILA f);
+
+/**
  * @brief obtem o proxima no da fila sem remove-la
  * @param q a fila a ser consultada
  * @return O ponteiro para a forma no início da fila

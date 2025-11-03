@@ -44,7 +44,7 @@ float get_YC(CIRCULO c){
      return ((circ*)c)->y;
 }
 
-float get_rC(CIRCULO c){
+float get_RC(CIRCULO c){
     return ((circ*)c)->r;
 }
 
@@ -59,15 +59,36 @@ char* get_cpC(CIRCULO c){
 float get_areaC(CIRCULO c){
    return M_PI * ((circ*)c)->r * ((circ*)c)->r;
 }
-void set_xC(CIRCULO c, float x){
+CIRCULO clone_circulo(CIRCULO c) {
+    if (c == NULL) return NULL;
+    return cria_circulo(
+      get_idC(c),     
+      get_XC(c),
+      get_YC(c),
+      get_RC(c),
+      get_cbC(c),
+      get_cpC(c)
+    );
+}
+void set_XC(CIRCULO c, float x){
     ((circ*)c)->x = x;
 }
 
-void set_yC(CIRCULO c, float y){
+void set_YC(CIRCULO c, float y){
     ((circ*)c)->y = y;
 }
 
-void set_cbC(CIRCULO c, char* cb){
+void set_RC(CIRCULO c, float r){
+    ((circ*)c)->r = r;
+}
+
+void set_posicaoC(CIRCULO c, float x, float y) {
+    circ* c1 = (circ*)c;
+    
+    c1->x = x;
+    c1->y = y;
+}
+void set_cbC(CIRCULO c, const char* cb){
     circ* c1 = (circ*)c;
     free(c1->corb);
     c1->corb = strdup(cb);
@@ -81,7 +102,7 @@ void set_idC(CIRCULO c, int id){
    ((circ*)c)->id = id;
 }
 
-void set_cpC(CIRCULO c, char* corp){
+void set_cpC(CIRCULO c, const char* corp){
     circ* c1 = (circ*)c;
     free(c1->corp);
     c1->corp = strdup(corp);

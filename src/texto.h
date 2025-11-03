@@ -47,6 +47,14 @@ float get_yT(TEXTO t);
 char* get_cpT(TEXTO t);
 
 /**
+ * @brief Define a nova posição da âncora do texto
+ * @param t O texto a ser modificado
+ * @param x A nova coordenada x
+ * @param y A nova coordenada y
+ */
+void set_posicaoT(TEXTO t, float x, float y);
+
+/**
  * @brief Obtém o caractere de ancoragem do texto.
  * A âncora define o ponto de alinhamento do texto (início, meio ou fim).
  * @param t O objeto de texto a ser consultado.
@@ -60,6 +68,12 @@ char get_aT(TEXTO t);
  * @return Um ponteiro para a string que contém o texto.
  */
 char* get_txtT(TEXTO t);
+/**
+ * @brief Cria e retorna um novo texto que é uma cópia exata do original.
+ * @param t O texto a ser clonado.
+ * @return Um ponteiro para o novo texto (um clone).
+ */
+TEXTO clone_texto(TEXTO t);
 
 /**
  * @brief Calcula a área do texto
@@ -107,6 +121,12 @@ void set_yT(TEXTO t, float y);
 char* get_familiaT(TEXTO t);
 char* get_pesoT(TEXTO t);
 
+/**
+ * @brief atualiza a cor da borda do texto
+ * @param t o texto a ser consultado
+ * @param cb a nova string da cor da borda
+ */
+void set_cbT(TEXTO t, const char* cb);
 
 /**
  * @brief destroi a estrutura do texto e libera a memoria

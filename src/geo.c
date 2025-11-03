@@ -23,18 +23,18 @@ void processar_geo(char* caminho_geo, FILA chao, FILA arena, float* chao_x, floa
     while (fgets(linha, sizeof(linha), arquivo_geo)) {
      sscanf(linha, "%s", comando);
      if(strcmp (comando, "c")==0){
-    int id;
-    float r, x, y;
-    char corb[20], corp[20];
-    sscanf(linha, "c %d %f %f %f %s %s", &id, &r, &x, &y, corb, corp);
-    FORMA novo_circulo=cria_circulo(id, x, y, r, corb, corp);
-    inserir_na_fila(chao, novo_circulo);
+        int id;
+        float r, x, y;
+        char corb[30], corp[30];
+        sscanf(linha, "c %d %f %f %f %s %s", &id, &x, &y, &r, corb, corp);
+        FORMA novo_circulo=cria_circulo(id, x, y, r, corb, corp);
+        inserir_na_fila(chao, novo_circulo);
      }
      if(strcmp(comando, "r")==0){
         int id;
-       float x, y, w, h;
-        char corb[20], corp[20];
-        sscanf(linha, "r %d %f %f %f %f %s %s", &id, &w, &h, &x, &y, corb, corp);
+        float x, y, w, h;
+        char corb[30], corp[30];
+        sscanf(linha, "r %d %f %f %f %f %s %s", &id, &x, &y, &w, &h, corb, corp);
         FORMA novo_retangulo=cria_retangulo(id, x, y, w, h, corb, corp);
         inserir_na_fila(chao, novo_retangulo);
      }
@@ -52,16 +52,22 @@ void processar_geo(char* caminho_geo, FILA chao, FILA arena, float* chao_x, floa
      if(strcmp(comando, "t")==0){
         int id;
         float x, y;
-        char corb[20], corp[20], txt[30];
+        char corb[30], corp[30];
         char a;
-        sscanf(linha, "t %d %f %f %s %s %c %s", &id, &x, &y, corb, corp, &a, txt);
-        FORMA novo_texto=cria_texto(id, x, y, corb, corp, a, txt, estilo_familia, estilo_peso, estilo_tam);
+        sscanf(linha, "t %d %f %f %s %s %c", &id, &x, &y, corb, corp, &a);
+
+        char* inicio_texto = strchr(linha, a); 
+        if (inicio_texto != NULL) {
+            inicio_texto += 2; 
+        }
+
+        FORMA novo_texto=cria_texto(id, x, y, corb, corp, a, inicio_texto, estilo_familia, estilo_peso, estilo_tam);
         inserir_na_fila(chao, novo_texto);
      }
      if (strcmp(comando, "chao") == 0) {
-            sscanf(linha, "chao %f %f %f %f %s", chao_x, chao_y, chao_w, chao_h, chao_cor);
+            sscanf(linha, "chao %f %f %f %f %s", chao_x, chao_y, chao_w, chao_h, chao_cor); // chao_cor já é um ponteiro (char[])
 }
-    if (strcmp(comando, "arena") == 0) {
+    if (strcmp(comando, "arena") == 0) { 
             sscanf(linha, "arena %f %f %f %f %s", arena_x, arena_y, arena_w, arena_h, arena_cor);
     }
 }

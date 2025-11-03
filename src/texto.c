@@ -44,12 +44,18 @@ text *t = malloc(sizeof(text));
     int get_idT(TEXTO t){
      return ((text*)t)->id;
 }
-float get_XT(TEXTO t){
+float get_xT(TEXTO t){
     return ((text*)t)->x;
 }
 
-float get_YT(TEXTO t){
+float get_yT(TEXTO t){
      return ((text*)t)->y;
+}
+
+void set_posicaoT(TEXTO t, float x, float y) {
+    text* t1 = (text*)t;
+    t1->x = x;
+    t1->y = y;
 }
 
 char get_aT(TEXTO t){
@@ -67,8 +73,25 @@ char* get_cpT(TEXTO t){
      return ((text*)t)->corp;
 }
 
+TEXTO clone_texto(TEXTO t) {
+    if (t == NULL) return NULL;
+
+    return cria_texto(
+        get_idT(t),
+        get_xT(t),
+        get_yT(t),
+        get_cbT(t),
+        get_cpT(t),
+        get_aT(t),
+        get_txtT(t),
+        get_familiaT(t),
+        get_pesoT(t),
+        get_tamT(t)
+    );
+}
+
 float get_areaT(TEXTO t){
-    return strlen(((text*)t)->txt) * 10.0;
+    return strlen(((text*)t)->txt) * 20.0;
 }
 char* get_familiaT(TEXTO t) {
      return ((text*)t)->familia;
@@ -76,7 +99,7 @@ char* get_familiaT(TEXTO t) {
 char* get_pesoT(TEXTO t) { 
     return ((text*)t)->peso;
  }
-char* get_tamanhoT(TEXTO t) { 
+char* get_tamT(TEXTO t) { 
     return ((text*)t)->tam;
 }
 
@@ -88,7 +111,7 @@ void set_yT(TEXTO t, float y){
     ((text*)t)->y = y;
 }
 
-void set_cbT(TEXTO t, char* cb){
+void set_cbT(TEXTO t, const char* cb){
     text* t1 = (text*)t;
     free(t1->corb);
     t1->corb = strdup(cb);
@@ -102,7 +125,7 @@ void set_idT(TEXTO t, int id){
    ((text*)t)->id = id;
 }
 
-void set_cpT(TEXTO t, char* corp){
+void set_cpT(TEXTO t, const char* corp){
     text* t1 = (text*)t;
     free(t1->corp);
     t1->corp = strdup(corp);
@@ -123,5 +146,3 @@ void kill_texto(TEXTO t) {
     free(t1->tam);
     free(t);
 }
-
-

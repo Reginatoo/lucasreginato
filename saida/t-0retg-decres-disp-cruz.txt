@@ -1,0 +1,121 @@
+Carregando 20 formas no carregador 3:
+ Retangulo ID:5, X:289.461945, Y:146.016541, W:67.199997, H:53.400002, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:6, X:471.609467, Y:214.601334, W:64.400002, H:51.799999, Borda:#800000, Preench:#c8ab37
+ Retangulo ID:7, X:171.848679, Y:121.415382, W:61.599998, H:50.200001, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:8, X:173.257355, Y:269.375214, W:58.799999, H:48.599998, Borda:#800000, Preench:#c8ab37
+ Retangulo ID:9, X:272.077637, Y:184.081619, W:56.000000, H:47.000000, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:10, X:470.255432, Y:270.029266, W:53.200001, H:45.400002, Borda:#800000, Preench:#c8ab37
+ Retangulo ID:11, X:50.070278, Y:97.626457, W:50.400002, H:43.799999, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:12, X:190.300964, Y:83.452744, W:47.599998, H:42.200001, Borda:#800000, Preench:#c8ab37
+ Retangulo ID:13, X:436.335449, Y:447.808929, W:44.799999, H:40.599998, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:14, X:70.239998, Y:28.830906, W:42.000000, H:39.000000, Borda:#800000, Preench:#c8ab37
+ Retangulo ID:15, X:408.297638, Y:424.592560, W:39.200001, H:37.400002, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:16, X:35.154045, Y:30.864843, W:36.400002, H:35.799999, Borda:#800000, Preench:#c8ab37
+ Retangulo ID:17, X:339.859711, Y:418.107727, W:33.599998, H:34.200001, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:18, X:97.420181, Y:138.379639, W:30.799999, H:32.599998, Borda:#800000, Preench:#c8ab37
+ Retangulo ID:19, X:240.162308, Y:225.732071, W:28.000000, H:31.000000, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:20, X:221.298248, Y:153.941864, W:25.200001, H:29.400000, Borda:#800000, Preench:#c8ab37
+ Retangulo ID:21, X:85.720299, Y:320.707153, W:22.400000, H:27.799999, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:22, X:312.812103, Y:440.038116, W:19.600000, H:26.200001, Borda:#800000, Preench:#c8ab37
+ Retangulo ID:23, X:486.674530, Y:190.888824, W:16.799999, H:24.600000, Borda:#c87137, Preench:#ffcc00
+ Retangulo ID:24, X:277.086792, Y:101.767479, W:14.000000, H:23.000000, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:24, X:277.086792, Y:101.767479, W:14.000000, H:23.000000, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:24, X:320.000000, Y:305.000000, W:14.000000, H:23.000000, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:23, X:486.674530, Y:190.888824, W:16.799999, H:24.600000, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:23, X:334.000000, Y:316.000000, W:16.799999, H:24.600000, Borda:#c87137, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:22, X:312.812103, Y:440.038116, W:19.600000, H:26.200001, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:22, X:348.000000, Y:327.000000, W:19.600000, H:26.200001, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:21, X:85.720299, Y:320.707153, W:22.400000, H:27.799999, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:21, X:362.000000, Y:338.000000, W:22.400000, H:27.799999, Borda:#c87137, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:20, X:221.298248, Y:153.941864, W:25.200001, H:29.400000, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:20, X:376.000000, Y:349.000000, W:25.200001, H:29.400000, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:19, X:240.162308, Y:225.732071, W:28.000000, H:31.000000, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:19, X:320.000000, Y:195.000000, W:28.000000, H:31.000000, Borda:#c87137, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:18, X:97.420181, Y:138.379639, W:30.799999, H:32.599998, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:18, X:334.000000, Y:184.000000, W:30.799999, H:32.599998, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:17, X:339.859711, Y:418.107727, W:33.599998, H:34.200001, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:17, X:348.000000, Y:173.000000, W:33.599998, H:34.200001, Borda:#c87137, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:16, X:35.154045, Y:30.864843, W:36.400002, H:35.799999, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:16, X:362.000000, Y:162.000000, W:36.400002, H:35.799999, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:15, X:408.297638, Y:424.592560, W:39.200001, H:37.400002, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:15, X:376.000000, Y:151.000000, W:39.200001, H:37.400002, Borda:#c87137, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:14, X:70.239998, Y:28.830906, W:42.000000, H:39.000000, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:14, X:180.000000, Y:305.000000, W:42.000000, H:39.000000, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:13, X:436.335449, Y:447.808929, W:44.799999, H:40.599998, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:13, X:166.000000, Y:316.000000, W:44.799999, H:40.599998, Borda:#c87137, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:12, X:190.300964, Y:83.452744, W:47.599998, H:42.200001, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:12, X:152.000000, Y:327.000000, W:47.599998, H:42.200001, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:11, X:50.070278, Y:97.626457, W:50.400002, H:43.799999, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:11, X:138.000000, Y:338.000000, W:50.400002, H:43.799999, Borda:#c87137, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:10, X:470.255432, Y:270.029266, W:53.200001, H:45.400002, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:10, X:124.000000, Y:349.000000, W:53.200001, H:45.400002, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:9, X:272.077637, Y:184.081619, W:56.000000, H:47.000000, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:9, X:180.000000, Y:195.000000, W:56.000000, H:47.000000, Borda:#c87137, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:8, X:173.257355, Y:269.375214, W:58.799999, H:48.599998, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:8, X:166.000000, Y:184.000000, W:58.799999, H:48.599998, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:7, X:171.848679, Y:121.415382, W:61.599998, H:50.200001, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:7, X:152.000000, Y:173.000000, W:61.599998, H:50.200001, Borda:#c87137, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:6, X:471.609467, Y:214.601334, W:64.400002, H:51.799999, Borda:#800000, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:6, X:138.000000, Y:162.000000, W:64.400002, H:51.799999, Borda:#800000, Preench:#c8ab37
+Forma em posicao de disparo 
+ Retangulo ID:5, X:289.461945, Y:146.016541, W:67.199997, H:53.400002, Borda:#c87137, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:5, X:124.000000, Y:151.000000, W:67.199997, H:53.400002, Borda:#c87137, Preench:#ffcc00
+Processando colisoes na arena:
+  > Verificando ID 24 vs ID 23: SEM sobreposicao. Ambas voltam para o chao.
+  > Verificando ID 22 (area 513.52) vs ID 21 (area 622.72): SOBREPOSICAO
+    >> Resultado: Forma ID 22 esmagada. Pontos: 513.52. Forma ID 21 volta para o chao.
+  > Verificando ID 20 vs ID 19: SEM sobreposicao. Ambas voltam para o chao.
+  > Verificando ID 18 (area 1004.08) vs ID 17 (area 1149.12): SOBREPOSICAO
+    >> Resultado: Forma ID 18 esmagada. Pontos: 1004.08. Forma ID 17 volta para o chao.
+  > Verificando ID 16 (area 1303.12) vs ID 15 (area 1466.08): SOBREPOSICAO
+    >> Resultado: Forma ID 16 esmagada. Pontos: 1303.12. Forma ID 15 volta para o chao.
+  > Verificando ID 14 (area 1638.00) vs ID 13 (area 1818.88): SOBREPOSICAO
+    >> Resultado: Forma ID 14 esmagada. Pontos: 1638.00. Forma ID 13 volta para o chao.
+  > Verificando ID 12 (area 2008.72) vs ID 11 (area 2207.52): SOBREPOSICAO
+    >> Resultado: Forma ID 12 esmagada. Pontos: 2008.72. Forma ID 11 volta para o chao.
+  > Verificando ID 10 vs ID 9: SEM sobreposicao. Ambas voltam para o chao.
+  > Verificando ID 8 (area 2857.68) vs ID 7 (area 3092.32): SOBREPOSICAO
+    >> Resultado: Forma ID 8 esmagada. Pontos: 2857.68. Forma ID 7 volta para o chao.
+  > Verificando ID 6 (area 3335.92) vs ID 5 (area 3588.48): SOBREPOSICAO
+    >> Resultado: Forma ID 6 esmagada. Pontos: 3335.92. Forma ID 5 volta para o chao.
+Pontuacao do Round: 12661.04
+Pontuacao Total Acumulada: 12661.04

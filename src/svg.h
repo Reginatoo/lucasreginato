@@ -1,25 +1,21 @@
 #ifndef SVG_H
 #define SVG_H
 
+#include <stdio.h>
 #include "fila.h" 
+
 /**
- * @brief desenha o cenario em um svg
- * @param caminho_svg o caminho completo para o svg
- * @param chao a fila onde as formas do chão serão armazenadas
- * @param arena a fila onde as formas da arena serão armazenadas
- * @param chao_x propriedade do retangulo do chao
- * @param chao_y propriedade do retangulo do chao
- * @param chao_w a largura do chao
- * @param chao_h a altura do chão
- * @param chao_cor a cor do chão
- * @param arena_x propriedade do retangulo da arena
- * @param arena_y propriedade do retangulo da arena
- * @param arena_w a largura da arena
- * @param arena_h a altura da arena
- * @param arena_cor a cor da arena
+ * @brief Gera um ficheiro SVG 
+ * @param caminho_svg O nome/caminho do ficheiro SVG a ser criado
+ * @param chao Fila de formas no chão
+ * @param arena Fila de formas na arena
+ * @param cx Coordenada X do chão
+ * @param cy Coordenada Y do chão
+ * @param cw Largura do chão
+ * @param ch Altura do chão
+ * @param ccor Cor da borda do chão
  */
-void desenha_svg(char* caminho_svg, FILA chao, FILA arena, float chao_x, float chao_y, float chao_w, float chao_h, char chao_cor[], float arena_x, float arena_y, float arena_w, float arena_h, char arena_cor[]);
+void desenhar_svg(char* caminho_svg, FILA chao, FILA arena,
+                  float cx, float cy, float cw, float ch, char* ccor); 
 
-
-
-#endif 
+#endif

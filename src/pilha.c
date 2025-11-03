@@ -3,16 +3,18 @@
 #include <string.h>
 #include "pilha.h"
 
-typedef struct{
+struct no_pilha { 
     form forma;
-    struct no* proximo;
-}no;
+    struct no_pilha* proximo; 
+};
+typedef struct no_pilha no;
+
 typedef struct{
     no* topo;
     int tamanho;
 }pilhastruct;
 
-PILHA cria_pilha(){
+PILHA criar_pilha(){
     pilhastruct* p=(pilhastruct*)malloc(sizeof(pilhastruct));
     if (p==NULL){
         printf ("erro de alocação na pilha \n");
@@ -52,21 +54,24 @@ form remover_da_pilha(PILHA p){
 int pilha_esta_vazia(PILHA p) {
     pilhastruct* p1 = (pilhastruct*)p;
     
-    if (p1->topo == NULL) {
+    if (p1 == NULL || p1->topo == NULL) {
         return 1; 
     } else {
         return 0; 
     }
 }
-void kill_pilha(PILHA p){
-    pilhastruct* p1=(pilhastruct*)p;
-    while(p1->tamanho!=0){     
-        no* no_removido=p1->topo;
-       p1->topo=p1->topo->proximo;
-
-         free(no_removido);
-        p1->tamanho--;
-
+void kill_pilha(PILHA q, void (*destruir_forma)(form f)) {
+    pilhastruct* p1 = (pilhastruct*)q; 
+    if (p1 == NULL) return;
+    no* atual = p1->topo; 
+    no* proximo;
+    while (atual != NULL) {
+        proximo = atual->proximo; 
+        if (destruir_forma != NULL) {
+            destruir_forma(atual->forma); 
+        }   
+        free(atual);
+        atual = proximo; 
     }
     free(p1);
 }

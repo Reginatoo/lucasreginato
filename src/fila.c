@@ -14,7 +14,7 @@ typedef struct{
     int tamanho;
 } filastruct;
 
-FILA cria_fila(){
+FILA criar_fila(){
     filastruct* q=(filastruct*)malloc(sizeof(filastruct));
     if (q==NULL){
         printf ("erro de alocação na fila \n");
@@ -66,6 +66,22 @@ form remover_da_fila(FILA q){
     return(forma_a_retornar);
 }
 
+int fila_esta_vazia(FILA f) {
+    filastruct* f1 = (filastruct*)f;
+    if (f1 == NULL || f1->inicio == NULL) {
+        return 1; 
+    } else {
+        return 0; 
+    }
+    
+}
+int tamanho_fila(FILA f) {
+    filastruct* f1 = (filastruct*)f;
+    if (f1 == NULL) {
+        return 0;
+    }
+    return f1->tamanho; 
+}
 void* get_primeiro_no(FILA f) {
     filastruct* fila = (filastruct*)f;
     return fila->inicio;
