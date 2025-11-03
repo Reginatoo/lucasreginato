@@ -1,0 +1,112 @@
+Carregando 13 formas no carregador 6:
+ Retangulo ID:5, X:131.910477, Y:379.570435, W:52.542675, H:72.296074, Borda:#454837, Preench:#0088aa
+ Retangulo ID:6, X:339.111847, Y:234.430405, W:33.050365, H:29.453844, Borda:#ccff00, Preench:#ffcc00
+ Texto ID:7, X:123.499702, Y:471.903381, Borda:#ffff00, Preench:#66ff00, Ancora:'f', Conteudo:"ff00 #66ff00 f catecatecatecatecatecatecate
+"
+ Linha ID:8, X1:210.602783, Y1:427.264435, X2:158.333115, Y2:348.046082, Cor:#ffff00
+ Texto ID:9, X:472.070618, Y:258.193176, Borda:#800080, Preench:#ffcc00, Ancora:'m', Conteudo:"catecatecatecatecate
+"
+ Linha ID:10, X1:279.967010, Y1:346.381073, X2:257.260651, Y2:305.990845, Cor:#800080
+ Linha ID:11, X1:492.792267, Y1:489.523438, X2:476.319641, Y2:415.177521, Cor:#454837
+ Linha ID:12, X1:345.825775, Y1:555.762695, X2:324.902100, Y2:470.874725, Cor:#454837
+ Linha ID:13, X1:370.442688, Y1:168.817535, X2:350.518738, Y2:129.037704, Cor:#800080
+ Circulo ID:14, X:255.530334, Y:298.250610, R:29.557775, Borda:#ffff00, Preench:#66ff00
+ Texto ID:15, X:420.222534, Y:224.748505, Borda:#454837, Preench:#decd87, Ancora:'f', Conteudo:"abaabaabaabaaba
+"
+ Retangulo ID:16, X:430.832489, Y:104.098404, W:45.056293, H:75.924988, Borda:#ffff00, Preench:#ffcc00
+ Linha ID:17, X1:412.602234, Y1:521.254944, X2:389.570251, Y2:468.484741, Cor:#ccff00
+Carregando 10 formas no carregador 8:
+ Texto ID:18, X:262.549011, Y:440.571198, Borda:#ccff00, Preench:#ffcc00, Ancora:'i', Conteudo:"catecate
+"
+ Linha ID:19, X1:532.281311, Y1:394.427429, X2:461.372772, Y2:357.627411, Cor:#454837
+ Linha ID:20, X1:75.070175, Y1:245.711899, X2:14.116645, Y2:206.942841, Cor:#ffff00
+ Linha ID:21, X1:575.275146, Y1:175.298538, X2:505.653107, Y2:102.960716, Cor:#800080
+ Texto ID:22, X:303.854370, Y:320.478119, Borda:#454837, Preench:#66ff00, Ancora:'i', Conteudo:"caxicaxicaxicaxicaxicaxicaxi
+"
+ Linha ID:23, X1:427.154755, Y1:240.487701, X2:391.544891, Y2:162.597275, Cor:#ccff00
+ Linha ID:24, X1:273.081757, Y1:79.114769, X2:239.357635, Y2:23.884792, Cor:#800080
+ Circulo ID:25, X:159.046005, Y:327.062592, R:23.761293, Borda:#ffff00, Preench:#ffcc00
+ Retangulo ID:26, X:307.708679, Y:386.518890, W:50.428284, H:56.847164, Borda:#ffff00, Preench:#ffcc00
+ Retangulo ID:27, X:448.845154, Y:310.099304, W:18.399952, H:46.461044, Borda:#ccff00, Preench:#0088aa
+Forma em posicao de disparo 
+ Linha ID:17, X1:412.602234, Y1:521.254944, X2:389.570251, Y2:468.484741, Cor:#ccff00
+Forma em posicao de disparo 
+ Retangulo ID:27, X:448.845154, Y:310.099304, W:18.399952, H:46.461044, Borda:#ccff00, Preench:#0088aa
+Forma em posicao de disparo 
+ Retangulo ID:16, X:430.832489, Y:104.098404, W:45.056293, H:75.924988, Borda:#ffff00, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:16, X:430.832489, Y:104.098404, W:45.056293, H:75.924988, Borda:#ffff00, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:27, X:448.845154, Y:310.099304, W:18.399952, H:46.461044, Borda:#ccff00, Preench:#0088aa
+Forma em posicao de disparo 
+ Retangulo ID:27, X:448.845154, Y:310.099304, W:18.399952, H:46.461044, Borda:#ccff00, Preench:#0088aa
+Forma em posicao de disparo 
+ Retangulo ID:26, X:307.708679, Y:386.518890, W:50.428284, H:56.847164, Borda:#ffff00, Preench:#ffcc00
+Forma disparada 
+ Retangulo ID:26, X:551.670044, Y:176.660004, W:50.428284, H:56.847164, Borda:#ffff00, Preench:#ffcc00
+Forma em posicao de disparo 
+ Retangulo ID:27, X:448.845154, Y:310.099304, W:18.399952, H:46.461044, Borda:#ccff00, Preench:#0088aa
+Forma disparada 
+ Retangulo ID:27, X:556.670044, Y:186.660004, W:18.399952, H:46.461044, Borda:#ccff00, Preench:#0088aa
+Forma em posicao de disparo 
+ Circulo ID:25, X:159.046005, Y:327.062592, R:23.761293, Borda:#ffff00, Preench:#ffcc00
+Forma disparada 
+ Circulo ID:25, X:561.670044, Y:196.660004, R:23.761293, Borda:#ffff00, Preench:#ffcc00
+Forma em posicao de disparo 
+ Linha ID:24, X1:273.081757, Y1:79.114769, X2:239.357635, Y2:23.884792, Cor:#800080
+Forma disparada 
+ Linha ID:24, X1:566.670044, Y1:206.660004, X2:532.945923, Y2:151.430023, Cor:#800080
+Forma em posicao de disparo 
+ Linha ID:23, X1:427.154755, Y1:240.487701, X2:391.544891, Y2:162.597275, Cor:#ccff00
+Forma disparada 
+ Linha ID:23, X1:571.670044, Y1:216.660004, X2:536.060181, Y2:138.769577, Cor:#ccff00
+Forma em posicao de disparo 
+ Texto ID:22, X:303.854370, Y:320.478119, Borda:#454837, Preench:#66ff00, Ancora:'i', Conteudo:"caxicaxicaxicaxicaxicaxicaxi
+"
+Forma disparada 
+ Texto ID:22, X:576.670044, Y:226.660004, Borda:#454837, Preench:#66ff00, Ancora:'i', Conteudo:"caxicaxicaxicaxicaxicaxicaxi
+"
+Forma em posicao de disparo 
+ Linha ID:21, X1:575.275146, Y1:175.298538, X2:505.653107, Y2:102.960716, Cor:#800080
+Forma disparada 
+ Linha ID:21, X1:581.670044, Y1:236.660004, X2:512.047974, Y2:164.322174, Cor:#800080
+Disparando todas as formas do carregador ESQUERDO (disparador 3):
+ Linha ID:17, X1:551.669983, Y1:176.669998, X2:528.638000, Y2:123.899796, Cor:#ccff00
+ Texto ID:15, X:556.669983, Y:186.669998, Borda:#454837, Preench:#decd87, Ancora:'f', Conteudo:"abaabaabaabaaba
+"
+ Circulo ID:14, X:561.669983, Y:196.669998, R:29.557775, Borda:#ffff00, Preench:#66ff00
+ Linha ID:13, X1:566.669983, Y1:206.669998, X2:546.746033, Y2:166.890167, Cor:#800080
+ Linha ID:12, X1:571.669983, Y1:216.669998, X2:550.746338, Y2:131.782028, Cor:#454837
+ Linha ID:11, X1:576.669983, Y1:226.669998, X2:560.197388, Y2:152.324081, Cor:#454837
+ Linha ID:10, X1:581.669983, Y1:236.669998, X2:558.963623, Y2:196.279770, Cor:#800080
+ Texto ID:9, X:586.669983, Y:246.669998, Borda:#800080, Preench:#ffcc00, Ancora:'m', Conteudo:"catecatecatecatecate
+"
+ Linha ID:8, X1:591.669983, Y1:256.669983, X2:539.400330, Y2:177.451630, Cor:#ffff00
+ Texto ID:7, X:596.669983, Y:266.669983, Borda:#ffff00, Preench:#66ff00, Ancora:'f', Conteudo:"ff00 #66ff00 f catecatecatecatecatecatecate
+"
+ Retangulo ID:6, X:601.669983, Y:276.669983, W:33.050365, H:29.453844, Borda:#ccff00, Preench:#ffcc00
+ Retangulo ID:5, X:606.669983, Y:286.669983, W:52.542675, H:72.296074, Borda:#454837, Preench:#0088aa
+Processando colisoes na arena:
+  > Verificando ID 26 (area 2866.70) vs ID 27 (area 854.88): SOBREPOSICAO
+    >> Resultado: Forma ID 26 modificou ID 27 e se clonou. Todas voltam para o chao.
+  > Verificando ID 25 (area 1773.74) vs ID 24 (area 129.42): SOBREPOSICAO
+    >> Resultado: Forma ID 25 modificou ID 24 e se clonou. Todas voltam para o chao.
+  > Verificando ID 23 vs ID 22: SEM sobreposicao. Ambas voltam para o chao.
+  > Verificando ID 21 vs ID 17: SEM sobreposicao. Ambas voltam para o chao.
+  > Verificando ID 15 (area 320.00) vs ID 14 (area 2744.69): SOBREPOSICAO
+    >> Resultado: Forma ID 15 esmagada. Pontos: 320.00. Forma ID 14 volta para o chao.
+  > Verificando ID 13 vs ID 12: SEM sobreposicao. Ambas voltam para o chao.
+  > Verificando ID 11 vs ID 10: SEM sobreposicao. Ambas voltam para o chao.
+  > Verificando ID 9 vs ID 8: SEM sobreposicao. Ambas voltam para o chao.
+  > Verificando ID 7 vs ID 6: SEM sobreposicao. Ambas voltam para o chao.
+  > Forma ID 5 sobrou na arena e voltou para o chao.
+Pontuacao do Round: 320.00
+Pontuacao Total Acumulada: 320.00
+
+
+RELATORIO FINAL:
+Pontuacao Final: 320.00
+Numero Total de Instrucoes Executadas: 26
+Numero Total de Disparos: 19
+Numero Total de Formas Esmagadas: 1
+Numero Total de Formas Clonadas: 2

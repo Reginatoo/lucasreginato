@@ -115,3 +115,11 @@ Processando colisoes na arena:
   > Verificando ID 6 vs ID 5: SEM sobreposicao. Ambas voltam para o chao.
 Pontuacao do Round: 0.00
 Pontuacao Total Acumulada: 0.00
+
+
+RELATORIO FINAL:
+Pontuacao Final: 0.00
+Numero Total de Instrucoes Executadas: 43
+Numero Total de Disparos: 20
+Numero Total de Formas Esmagadas: 0
+Numero Total de Formas Clonadas: 3

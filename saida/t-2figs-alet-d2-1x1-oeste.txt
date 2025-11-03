@@ -1,0 +1,39 @@
+Carregando 4 formas no carregador 6:
+ Retangulo ID:5, X:131.910477, Y:379.570435, W:52.542675, H:72.296074, Borda:#454837, Preench:#0088aa
+ Retangulo ID:6, X:339.111847, Y:234.430405, W:33.050365, H:29.453844, Borda:#ccff00, Preench:#ffcc00
+ Texto ID:7, X:123.499702, Y:471.903381, Borda:#ffff00, Preench:#66ff00, Ancora:'f', Conteudo:"ff00 #66ff00 f catecatecatecatecatecatecate
+"
+ Linha ID:8, X1:210.602783, Y1:427.264435, X2:158.333115, Y2:348.046082, Cor:#ffff00
+Carregando 4 formas no carregador 8:
+ Texto ID:9, X:472.070618, Y:258.193176, Borda:#800080, Preench:#ffcc00, Ancora:'m', Conteudo:"catecatecatecatecate
+"
+ Linha ID:10, X1:279.967010, Y1:346.381073, X2:257.260651, Y2:305.990845, Cor:#800080
+ Linha ID:11, X1:492.792267, Y1:489.523438, X2:476.319641, Y2:415.177521, Cor:#454837
+ Linha ID:12, X1:345.825775, Y1:555.762695, X2:324.902100, Y2:470.874725, Cor:#454837
+Forma em posicao de disparo 
+ Linha ID:8, X1:210.602783, Y1:427.264435, X2:158.333115, Y2:348.046082, Cor:#ffff00
+Forma em posicao de disparo 
+ Linha ID:12, X1:345.825775, Y1:555.762695, X2:324.902100, Y2:470.874725, Cor:#454837
+Forma em posicao de disparo 
+ Linha ID:11, X1:492.792267, Y1:489.523438, X2:476.319641, Y2:415.177521, Cor:#454837
+Forma disparada 
+ Linha ID:11, X1:551.670044, Y1:176.660004, X2:535.197388, Y2:102.314087, Cor:#454837
+Disparando todas as formas do carregador ESQUERDO (disparador 3):
+ Texto ID:7, X:551.669983, Y:176.669998, Borda:#ffff00, Preench:#66ff00, Ancora:'f', Conteudo:"ff00 #66ff00 f catecatecatecatecatecatecate
+"
+ Retangulo ID:6, X:552.919983, Y:179.169998, W:33.050365, H:29.453844, Borda:#ccff00, Preench:#ffcc00
+ Retangulo ID:5, X:554.169983, Y:181.669998, W:52.542675, H:72.296074, Borda:#454837, Preench:#0088aa
+Processando colisoes na arena:
+  > Verificando ID 11 vs ID 7: SEM sobreposicao. Ambas voltam para o chao.
+  > Verificando ID 6 (area 973.46) vs ID 5 (area 3798.63): SOBREPOSICAO
+    >> Resultado: Forma ID 6 esmagada. Pontos: 973.46. Forma ID 5 volta para o chao.
+Pontuacao do Round: 973.46
+Pontuacao Total Acumulada: 973.46
+
+
+RELATORIO FINAL:
+Pontuacao Final: 973.46
+Numero Total de Instrucoes Executadas: 10
+Numero Total de Disparos: 4
+Numero Total de Formas Esmagadas: 1
+Numero Total de Formas Clonadas: 0

@@ -24,60 +24,52 @@ Carregando 2 formas no carregador 8:
  Retangulo ID:20, X:567.859619, Y:681.481079, W:66.000000, H:51.799999, Borda:#6600ff, Preench:#c8ab37
 Forma em posicao de disparo 
  Retangulo ID:8, X:107.422340, Y:523.539795, W:24.000000, H:24.200001, Borda:#6600ff, Preench:#c8ab37
-Forma em posicao de disparo 
- Retangulo ID:6, X:308.275665, Y:245.216660, W:17.000000, H:19.600000, Borda:#6600ff, Preench:#c8ab37
+Forma disparada 
+ Retangulo ID:8, X:367.859985, Y:369.579987, W:24.000000, H:24.200001, Borda:#6600ff, Preench:#c8ab37
 Forma em posicao de disparo 
  Retangulo ID:7, X:143.723373, Y:234.561569, W:20.500000, H:21.900000, Borda:#784421, Preench:#00aa88
-Forma em posicao de disparo 
- Retangulo ID:8, X:107.422340, Y:523.539795, W:24.000000, H:24.200001, Borda:#6600ff, Preench:#c8ab37
-Forma em posicao de disparo 
- Retangulo ID:6, X:308.275665, Y:245.216660, W:17.000000, H:19.600000, Borda:#6600ff, Preench:#c8ab37
 Forma disparada 
- Retangulo ID:6, X:376.119995, Y:369.929993, W:17.000000, H:19.600000, Borda:#6600ff, Preench:#c8ab37
-Forma em posicao de disparo 
- Retangulo ID:8, X:107.422340, Y:523.539795, W:24.000000, H:24.200001, Borda:#6600ff, Preench:#c8ab37
-Forma disparada 
- Retangulo ID:8, X:380.179993, Y:377.190002, W:24.000000, H:24.200001, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:7, X:374.809998, Y:374.779999, W:20.500000, H:21.900000, Borda:#784421, Preench:#00aa88
 Forma em posicao de disparo 
  Retangulo ID:10, X:223.481155, Y:188.211395, W:31.000000, H:28.799999, Borda:#6600ff, Preench:#c8ab37
 Forma disparada 
- Retangulo ID:10, X:343.880005, Y:369.929993, W:31.000000, H:28.799999, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:10, X:352.140015, Y:369.579987, W:31.000000, H:28.799999, Borda:#6600ff, Preench:#c8ab37
 Forma em posicao de disparo 
  Retangulo ID:9, X:124.850044, Y:400.840759, W:27.500000, H:26.500000, Borda:#784421, Preench:#00aa88
 Forma disparada 
- Retangulo ID:9, X:347.940002, Y:377.190002, W:27.500000, H:26.500000, Borda:#784421, Preench:#00aa88
+ Retangulo ID:9, X:359.100006, Y:374.779999, W:27.500000, H:26.500000, Borda:#784421, Preench:#00aa88
 Forma em posicao de disparo 
  Retangulo ID:16, X:207.819244, Y:517.402222, W:52.000000, H:42.599998, Borda:#6600ff, Preench:#c8ab37
 Forma disparada 
- Retangulo ID:16, X:343.880005, Y:350.070007, W:52.000000, H:42.599998, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:16, X:352.140015, Y:350.420013, W:52.000000, H:42.599998, Borda:#6600ff, Preench:#c8ab37
 Forma em posicao de disparo 
  Retangulo ID:15, X:301.016632, Y:328.836853, W:48.500000, H:40.299999, Borda:#784421, Preench:#00aa88
 Forma disparada 
- Retangulo ID:15, X:344.679993, Y:357.320007, W:48.500000, H:40.299999, Borda:#784421, Preench:#00aa88
+ Retangulo ID:15, X:352.410004, Y:354.920013, W:48.500000, H:40.299999, Borda:#784421, Preench:#00aa88
 Forma em posicao de disparo 
  Retangulo ID:18, X:123.959946, Y:406.155304, W:59.000000, H:47.200001, Borda:#6600ff, Preench:#c8ab37
 Forma disparada 
- Retangulo ID:18, X:376.119995, Y:350.070007, W:59.000000, H:47.200001, Borda:#6600ff, Preench:#c8ab37
+ Retangulo ID:18, X:367.859985, Y:350.420013, W:59.000000, H:47.200001, Borda:#6600ff, Preench:#c8ab37
 Forma em posicao de disparo 
  Retangulo ID:17, X:160.601074, Y:396.538818, W:55.500000, H:44.900002, Borda:#784421, Preench:#00aa88
 Forma disparada 
- Retangulo ID:17, X:376.920013, Y:357.320007, W:55.500000, H:44.900002, Borda:#784421, Preench:#00aa88
+ Retangulo ID:17, X:368.130005, Y:354.920013, W:55.500000, H:44.900002, Borda:#784421, Preench:#00aa88
 Processando colisoes na arena:
-  > Verificando ID 6 (area 333.20) vs ID 8 (area 580.80): SOBREPOSICAO
-    >> Resultado: Forma ID 6 esmagada. Pontos: 333.20. Forma ID 8 volta para o chao.
+  > Verificando ID 8 (area 580.80) vs ID 7 (area 448.95): SOBREPOSICAO
+    >> Resultado: Forma ID 8 modificou ID 7 e se clonou. Todas voltam para o chao.
   > Verificando ID 10 (area 892.80) vs ID 9 (area 728.75): SOBREPOSICAO
     >> Resultado: Forma ID 10 modificou ID 9 e se clonou. Todas voltam para o chao.
   > Verificando ID 16 (area 2215.20) vs ID 15 (area 1954.55): SOBREPOSICAO
     >> Resultado: Forma ID 16 modificou ID 15 e se clonou. Todas voltam para o chao.
   > Verificando ID 18 (area 2784.80) vs ID 17 (area 2491.95): SOBREPOSICAO
     >> Resultado: Forma ID 18 modificou ID 17 e se clonou. Todas voltam para o chao.
-Pontuacao do Round: 333.20
-Pontuacao Total Acumulada: 333.20
+Pontuacao do Round: 0.00
+Pontuacao Total Acumulada: 0.00
 
 
 RELATORIO FINAL:
-Pontuacao Final: 333.20
-Numero Total de Instrucoes Executadas: 29
+Pontuacao Final: 0.00
+Numero Total de Instrucoes Executadas: 25
 Numero Total de Disparos: 8
-Numero Total de Formas Esmagadas: 1
-Numero Total de Formas Clonadas: 3
+Numero Total de Formas Esmagadas: 0
+Numero Total de Formas Clonadas: 4

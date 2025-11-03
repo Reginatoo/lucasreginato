@@ -6,23 +6,23 @@
 	<rect x="480.670380" y="167.172714" width="73.000000" height="56.400002" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
 	<rect x="671.958313" y="89.372391" width="76.500000" height="58.700001" stroke="#784421" fill="#00aa88" stroke-width="1" opacity="0.6" />
 	<rect x="583.951294" y="164.299393" width="80.000000" height="61.000000" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
-	<line x1="366.119995" y1="359.929993" x2="10.000000" y2="10.000000" stroke="MediumVioletRed" stroke-width="1" />
-	<line x1="370.179993" y1="367.190002" x2="10.000000" y2="10.000000" stroke="MediumVioletRed" stroke-width="1" />
-	<line x1="-366.119995" y1="359.929993" x2="710.000000" y2="10.000000" stroke="MediumVioletRed" stroke-width="1" />
-	<line x1="-362.059998" y1="367.190002" x2="710.000000" y2="10.000000" stroke="MediumVioletRed" stroke-width="1" />
-	<line x1="-366.119995" y1="-359.929993" x2="710.000000" y2="710.000000" stroke="MediumVioletRed" stroke-width="1" />
-	<line x1="-365.320007" y1="-352.679993" x2="710.000000" y2="710.000000" stroke="MediumVioletRed" stroke-width="1" />
-	<line x1="366.119995" y1="-359.929993" x2="10.000000" y2="710.000000" stroke="MediumVioletRed" stroke-width="1" />
-	<line x1="366.920013" y1="-352.679993" x2="10.000000" y2="710.000000" stroke="MediumVioletRed" stroke-width="1" />
-	<rect x="370.179993" y="367.190002" width="24.000000" height="24.200001" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
-	<text x="366.119995" y="359.929993" fill="red" stroke="red" stroke-width="1" font-family="Arial" font-weight="bold" font-size="12" text-anchor="middle">*</text>
-	<rect x="-366.119995" y="359.929993" width="31.000000" height="28.799999" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
-	<rect x="-362.059998" y="367.190002" width="27.500000" height="26.500000" stroke="#c8ab37" fill="#00aa88" stroke-width="1" opacity="0.6" />
-	<rect x="-366.119995" y="359.929993" width="31.000000" height="28.799999" stroke="#c8ab37" fill="#6600ff" stroke-width="1" opacity="0.6" />
-	<rect x="-366.119995" y="-359.929993" width="52.000000" height="42.599998" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
-	<rect x="-365.320007" y="-352.679993" width="48.500000" height="40.299999" stroke="#c8ab37" fill="#00aa88" stroke-width="1" opacity="0.6" />
-	<rect x="-366.119995" y="-359.929993" width="52.000000" height="42.599998" stroke="#c8ab37" fill="#6600ff" stroke-width="1" opacity="0.6" />
-	<rect x="366.119995" y="-359.929993" width="59.000000" height="47.200001" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
-	<rect x="366.920013" y="-352.679993" width="55.500000" height="44.900002" stroke="#c8ab37" fill="#00aa88" stroke-width="1" opacity="0.6" />
-	<rect x="366.119995" y="-359.929993" width="59.000000" height="47.200001" stroke="#c8ab37" fill="#6600ff" stroke-width="1" opacity="0.6" />
+	<line x1="376.119995" y1="369.929993" x2="10.000000" y2="10.000000" stroke="MediumVioletRed" stroke-width="1" />
+	<line x1="380.179993" y1="377.190002" x2="10.000000" y2="10.000000" stroke="MediumVioletRed" stroke-width="1" />
+	<line x1="343.880005" y1="369.929993" x2="710.000000" y2="10.000000" stroke="MediumVioletRed" stroke-width="1" />
+	<line x1="347.940002" y1="377.190002" x2="710.000000" y2="10.000000" stroke="MediumVioletRed" stroke-width="1" />
+	<line x1="343.880005" y1="350.070007" x2="710.000000" y2="710.000000" stroke="MediumVioletRed" stroke-width="1" />
+	<line x1="344.679993" y1="357.320007" x2="710.000000" y2="710.000000" stroke="MediumVioletRed" stroke-width="1" />
+	<line x1="376.119995" y1="350.070007" x2="10.000000" y2="710.000000" stroke="MediumVioletRed" stroke-width="1" />
+	<line x1="376.920013" y1="357.320007" x2="10.000000" y2="710.000000" stroke="MediumVioletRed" stroke-width="1" />
+	<rect x="380.179993" y="377.190002" width="24.000000" height="24.200001" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
+	<text x="376.119995" y="369.929993" fill="red" stroke="red" stroke-width="1" font-family="Arial" font-weight="bold" font-size="12" text-anchor="middle">*</text>
+	<rect x="343.880005" y="369.929993" width="31.000000" height="28.799999" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
+	<rect x="347.940002" y="377.190002" width="27.500000" height="26.500000" stroke="#c8ab37" fill="#00aa88" stroke-width="1" opacity="0.6" />
+	<rect x="343.880005" y="369.929993" width="31.000000" height="28.799999" stroke="#c8ab37" fill="#6600ff" stroke-width="1" opacity="0.6" />
+	<rect x="343.880005" y="350.070007" width="52.000000" height="42.599998" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
+	<rect x="344.679993" y="357.320007" width="48.500000" height="40.299999" stroke="#c8ab37" fill="#00aa88" stroke-width="1" opacity="0.6" />
+	<rect x="343.880005" y="350.070007" width="52.000000" height="42.599998" stroke="#c8ab37" fill="#6600ff" stroke-width="1" opacity="0.6" />
+	<rect x="376.119995" y="350.070007" width="59.000000" height="47.200001" stroke="#6600ff" fill="#c8ab37" stroke-width="1" opacity="0.6" />
+	<rect x="376.920013" y="357.320007" width="55.500000" height="44.900002" stroke="#c8ab37" fill="#00aa88" stroke-width="1" opacity="0.6" />
+	<rect x="376.119995" y="350.070007" width="59.000000" height="47.200001" stroke="#c8ab37" fill="#6600ff" stroke-width="1" opacity="0.6" />
 </svg>
