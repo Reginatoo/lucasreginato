@@ -75,3 +75,11 @@ Processando colisoes na arena:
     >> Resultado: Forma ID 6 modificou ID 5 e se clonou. Todas voltam para o chao.
 Pontuacao do Round: 0.00
 Pontuacao Total Acumulada: 0.00
+
+
+RELATORIO FINAL:
+Pontuacao Final: 0.00
+Numero Total de Instrucoes Executadas: 4
+Numero Total de Disparos: 24
+Numero Total de Formas Esmagadas: 0
+Numero Total de Formas Clonadas: 12

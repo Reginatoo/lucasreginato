@@ -119,3 +119,11 @@ Processando colisoes na arena:
     >> Resultado: Forma ID 6 esmagada. Pontos: 3335.92. Forma ID 5 volta para o chao.
 Pontuacao do Round: 12661.04
 Pontuacao Total Acumulada: 12661.04
+
+
+RELATORIO FINAL:
+Pontuacao Final: 12661.04
+Numero Total de Instrucoes Executadas: 43
+Numero Total de Disparos: 20
+Numero Total de Formas Esmagadas: 7
+Numero Total de Formas Clonadas: 0

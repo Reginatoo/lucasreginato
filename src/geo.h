@@ -20,5 +20,4 @@
  */
 void processar_geo(char* caminho_geo, FILA chao, FILA arena, float* chao_x, float* chao_y, float* chao_w, float* chao_h, char chao_cor[], float* arena_x, float* arena_y, float* arena_w, float* arena_h, char arena_cor[]);
 
-
 #endif
